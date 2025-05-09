@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <meta name="description" content="WDD 231- Web Frontend Development I">
     <meta name="author" content="Anissa Pooley">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Handlee&display=swap"
+        rel="stylesheet">
     <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
+
 <body>
     <header>
-        <picture class="profile">
-            <img>
-        </picture>
-        <span id="name"></span>
+        <div>
+            <picture class="profile">
+                <source srcset="images/profile-pic-small.webp" media="(max-width: 320px)">
+                <source srcset="images/profile-pic.webp" media="(max-width: 1200px)">
+                <img src="images/profile-pic.webp" alt="Profile Picture" loading="lazy" width="240" height="320">
+            </picture>
+            <span id="name"></span>
+        </div>
+        <button id="menu" title="Hamburger Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" class="active"></a></li>
+                <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="#" title="Final">Final</a></li>
+                <li><a href="#" title="GitHub">GitHub Profile</a></li>
+                <li><a href="www.linkedin.com/in/anissa-pooley-600344355" title="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html" title="Home" class="active"></a></li>
-            <li><a href="#" title="Chamber">Chamber</a></li>
-            <li><a href="#" title="Final">Final</a></li>
-            <li><a href="#" title="GitHub">GitHub Profile</a></li>
-            <li><a href="www.linkedin.com/in/anissa-pooley-600344355" title="LinkedIn">LinkedIn</a></li>
-        </ul>
-    </nav>
+    
     <main>
         <h1>Home</h1>
         <section>
             <h2>Course Work</h2>
+            <ul class="workList">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
         <section>
             <h2>Carlin, Nevada, USA</h2>
+            <picture class="nevada">
+                <source srcset="images/northern-nevada-small.webp" media="(max-width: 320px)">
+                <source srcset="images/northern-nevada.webp" media="(max-width: 1200px)">
+                <img src="images/northern-nevada.webp" alt="Rural Nevada" loading="lazy" width="612" height="424">
+            </picture>
         </section>
         <section>
             <h2>Web and Computer Programming Certificate</h2>
+            <nav class="certNav">
+                <ul class="filterList">
+                    <li><a href="#" id="all" title="All">All Courses</a></li>
+                    <li><a href="#" id="wdd" title="WDD">WDD Courses</a></li>
+                    <li><a href="#" id="cse" title="CSE">CSE Courses</a></li>
+                </ul>
+            </nav>
+            <div class="certificate">
+
+            </div>
         </section>
     </main>
     <footer>
         <p>
             ©️
             <span id="currentyear"></span>
-            🍓 Anissa Pooley 🍓 Nevada, USA </p>
+            🍓 Anissa Pooley 🍓 Nevada, USA
+        </p>
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
