@@ -7,7 +7,9 @@
     <title>Home Page</title>
     <meta name="description" content="WDD 231- Web Frontend Development I">
     <meta name="author" content="Anissa Pooley">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,35 +44,37 @@
     
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>Course Work</h2>
-            <ul class="workList">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Carlin, Nevada, USA</h2>
-            <picture class="nevada">
-                <source srcset="images/northern-nevada-small.webp" media="(max-width: 320px)">
-                <source srcset="images/northern-nevada.webp" media="(max-width: 1200px)">
-                <img src="images/northern-nevada.webp" alt="Rural Nevada" loading="lazy" width="612" height="424">
-            </picture>
-        </section>
-        <section>
-            <h2>Web and Computer Programming Certificate</h2>
-            <nav class="certNav">
-                <ul class="filterList">
-                    <li><a href="#" id="all" title="All">All Courses</a></li>
-                    <li><a href="#" id="wdd" title="WDD">WDD Courses</a></li>
-                    <li><a href="#" id="cse" title="CSE">CSE Courses</a></li>
+        <div class="courseContainer">
+            <section class="work">
+                <h2>Course Work</h2>
+                <ul class="workList">
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
-            </nav>
-            <div class="certificate">
-
-            </div>
-        </section>
+            </section>
+            <section class="place"> 
+                <h2>Carlin, Nevada, USA</h2>
+                <picture class="nevada">
+                    <source srcset="images/northern-nevada-small.webp" media="(max-width: 320px)">
+                    <source srcset="images/northern-nevada.webp" media="(max-width: 1200px)">
+                    <img src="images/northern-nevada.webp" alt="Rural Nevada" loading="lazy" width="612" height="424">
+                </picture>
+            </section>
+            <section class="cert">
+                <h2>Web and Computer Programming Certificate</h2>
+                <nav class="certNav">
+                    <ul class="filterList">
+                        <li><a href="#" id="all" title="All">All Courses</a></li>
+                        <li><a href="#" id="wdd" title="WDD">WDD Courses</a></li>
+                        <li><a href="#" id="cse" title="CSE">CSE Courses</a></li>
+                    </ul>
+                </nav>
+                <div class="certificate">
+            
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>

@@ -136,7 +136,7 @@ function createCourseCard(filteredCourses) {
         let courseNumber = parseInt(course.number);
         courseInfo.textContent = `${subject} ${courseNumber}`;
         card.appendChild(courseInfo);
-        
+
         let completion = course.completed;
         if (completion == true) {
             card.id = "completed";
@@ -147,6 +147,12 @@ function createCourseCard(filteredCourses) {
         document.querySelector(".certificate").appendChild(card);
     });
 }
+
+// function showCredits(filteredCourses) {
+//     filteredCourses.forEach((course) => {
+//         let creditParagraph = document.createElement("p");
+//     })
+// } 
 
 // function checkCompletion((course) => {
 

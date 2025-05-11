@@ -145,24 +145,19 @@ h2 {
 }
 
 .certNav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: .75rem auto;
+    border-bottom: 1px solid var(--background-color); 
+    color: var(--text-color);
 }
 
 .filterList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    display: block;
 }
 
 .filterList a {
     display: block;
     color: var(--text-color);
-
-    padding: .75rem;
-    margin: .75rem;
+    padding: .5rem;
+    margin: .5rem;
     border-radius: 3px;
     text-decoration: none;
     text-align: center;
@@ -175,8 +170,8 @@ h2 {
 }
 
 .certificate {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 
 .certificate div {
@@ -185,10 +180,12 @@ h2 {
     border: 1px solid var(--background-color);
     border-radius: 3px;
     padding: 1rem;
+    
 }
 
 #completed {
     background-color: var(--text-color);
+    justify-content: center;
 }
 
 #completed::before {
@@ -198,6 +195,7 @@ h2 {
 
 #todo {
     background-color: var(--accent-color);
+    justify-content: center;
 }
 
 footer {
