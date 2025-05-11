@@ -1,6 +1,6 @@
 :root {
     --text-color: rgb(241, 250, 238);
-    --accent-color: rgb(230, 57, 70);
+    --accent-color: rgb(207, 50, 63);
     --background-color: rgb(29, 53, 87);
     --main-color: rgb(168, 218, 220);
     --dark-main-color: rgb(69, 123, 157);
@@ -155,13 +155,13 @@ h2 {
 
 .filterList a {
     display: block;
-    color: var(--text-color);
+    color: black;
     padding: .5rem;
     margin: .5rem;
     border-radius: 3px;
     text-decoration: none;
     text-align: center;
-    background-color: var(--dark-main-color);
+    background-color: var(--main-color);
 }
 
 .active2::after {
@@ -194,8 +194,10 @@ h2 {
 }
 
 #todo {
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
     justify-content: center;
+    color: var(--text-color);
+    font-weight: bolder;
 }
 
 footer {
