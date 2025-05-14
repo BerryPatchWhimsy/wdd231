@@ -81,4 +81,8 @@
         justify-content: space-around;
     }
 
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
 }

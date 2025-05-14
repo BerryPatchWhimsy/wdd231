@@ -72,9 +72,9 @@ header div {
     border-bottom: 1px solid var(--background-color);
 }
 
-.navigation li {
+/* .navigation li {
     display: none;
-}
+} not needed with the animated menu settings*/
 
 .navigation a {
     display: block;
@@ -96,8 +96,20 @@ header div {
     font-weight: 700;
 }
 
-.open li {
+/* .open li {
     display: block;
+} not needed with the animated menu settings*/
+
+#animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation {overflow: hidden;}
+
+#animateMe.open {
+    grid-template-rows: 1fr;
 }
 
 .active::before {
