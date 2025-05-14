@@ -90,7 +90,14 @@ allCoursesLink.addEventListener("click", () => {
     allCoursesLink.classList.add("active2");
     wddCoursesLink.classList.remove("active2");
     cseCoursesLink.classList.remove("active2");
+
+    document.querySelector("#credits").innerHTML = "";
+    let credits = calculateCredits(courses);
+    document.querySelector("#credits").innerHTML = ` <span> ${credits}</span>`;
+
     return createCourseCard(courses);
+
+    
 });
 
 wddCoursesLink.addEventListener("click", () => {
@@ -107,6 +114,10 @@ wddCoursesLink.addEventListener("click", () => {
         }
     });
     createCourseCard(wddCourses);
+
+    document.querySelector("#credits").innerHTML = "";
+    let credits = calculateCredits(wddCourses);
+    document.querySelector("#credits").innerHTML = ` <span> ${credits}</span>`;
 });
 
 cseCoursesLink.addEventListener("click", () => {
@@ -123,6 +134,10 @@ cseCoursesLink.addEventListener("click", () => {
         }
     });
     createCourseCard(cseCourses);
+
+    document.querySelector("#credits").innerHTML = "";
+    let credits = calculateCredits(cseCourses);
+    document.querySelector("#credits").innerHTML = ` <span> ${credits}</span>`;
 });
 
 function createCourseCard(filteredCourses) {
@@ -146,6 +161,14 @@ function createCourseCard(filteredCourses) {
 
         document.querySelector(".certificate").appendChild(card);
     });
+}
+
+function calculateCredits(filteredCourses) {
+    let totalCredits = 0;
+    filteredCourses.forEach((course) => {
+        totalCredits += course.credits;
+    });
+    return totalCredits;
 }
 
 // function showCredits(filteredCourses) {
