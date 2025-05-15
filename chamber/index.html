@@ -12,27 +12,38 @@
     <meta property="og:description" content="Carlin Chamber of Commerce Home Page">
     <meta property="og:image" content="https://BerryPatchWhimsy.github.io/wdd231/chamber/images/hero.webp">
     <meta property="og:url" content="https://BerryPatchWhimsy.github.io/wdd231/chamber/directory.html">
+
     <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/header.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
     <header>
-        <picture class="logo">
-            <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)">
-            <source srcset="images/logo-pic.webp" media="(max-width: 1200px)">
-            <img src="images/logo-pic.webp" alt="Carlin Chamber Logo" loading="lazy" width="240" height="320">
-        </picture>
-        <div>
-            <span id="name"></span>
-            <p>Chamber of Commerce</p>
+        <div class="container">
+            <picture class="logo">
+                <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
+                <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
+                <img src="images/carlin-chamber.ico" alt="Carlin Chamber Logo" loading="lazy" width="48" height="48">
+            </picture>
+            <div>
+                <span id="name"></span>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu" title="Hamburger Menu"></button>
+
         </div>
-        <button id="menu" title="Hamburger Menu"></button>
-        <nav>
+    </header>
+    <main>
+        <nav id="animateMe">
             <ul class="navigation">
                 <li><a href="index.html" title="Home" class="active"></a></li>
                 <li><a href="directory.html" title="Business Directory">Directory</a></li>
@@ -40,26 +51,31 @@
                 <li><a href="discover.html" title="Discover">Discover</a></li>
             </ul>
         </nav>
-    </header>
-    <main></main>
+        <section></section>
+    </main>
     <footer>
-        <p>Carlin Chamber of Commerce</p>
-        <p>123 Main St, Carlin, NV 89822</p>
-        <p>Phone: (775) 123-4567</p>
-        <p><a href="https://www.carlincc.org">www.carlincc.org</a></p>
-
-        <p>Follow us on social media:</p>
-        <ul>
-            <li><a href="https://www.facebook.com/CarlinChamber" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/CarlinChamber" target="_blank">Instagram</a></li>
-            <li><a href="https://www.twitter.com/CarlinChamber" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/company/carlinchamber" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.youtube.com/user/CarlinChamber" target="_blank">YouTube</a></li>
-        </ul>
-        <p>WDD 231 - Class Project</p>
-        <p>Anissa Pooley</p>
-        <p> &copy; <span id="currentyear"></span>Carlin Chamber of Commerce</p>
-        <p id="lastModified"></p>
+        <div class="info">
+            <p class="carlinCC">Carlin Chamber of Commerce</p>
+            <p class="address">123 Main St, Carlin, NV 89822</p>
+            <p class="phone">(775) 123-4567</p>
+            <p class="email"><a href="mailto: info@carlincc.org">info@carlincc.org</a>
+        </div>
+        <div class="social">
+            <p>Follow us on social media:</p>
+            <nav class="socialLinks">
+                <a href="https://www.facebook.com/CarlinChamber"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/CarlinChamber"><img src="images/twitter-x-logo.png"
+                        alt="Twitter X"></a>
+                <a href="https://www.linkedin.com/company/carlinchamber"><img src="images/linked-in-logo.png"
+                        alt="LinkedIn"></a>
+            </nav>
+        </div>
+        <div class="copywrite">
+            <p>WDD 231 - Class Project</p>
+            <p>Anissa Pooley</p>
+            <p class="date"> &copy; <span id="currentyear"></span>Carlin Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
