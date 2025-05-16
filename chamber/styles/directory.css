@@ -33,7 +33,7 @@ footer {
     padding: .5rem;
 }
 
-.container{
+.container {
     display: flex;
     /* flex-wrap: wrap; */
 }
@@ -108,7 +108,9 @@ footer {
     transition: grid-template-rows 0.5s ease-out;
 }
 
-.navigation {overflow: hidden;}
+.navigation {
+    overflow: hidden;
+}
 
 #animateMe.open {
     grid-template-rows: 1fr;
@@ -132,11 +134,13 @@ footer {
     font-size: 5vw;
 }
 
-.address, .phone, .email{
+.address,
+.phone,
+.email {
     font-size: 4vw;
 }
 
-.social p{
+.social p {
     display: none;
 }
 
@@ -172,10 +176,12 @@ h2 {
 }
 
 #cards {
-    margin: 1rem;
-    display: grid;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
 }
 
 section {
@@ -193,6 +199,7 @@ section p {
 
 img {
     border-radius: 5px;
+    max-width: 250px;
     width: 100%;
     height: auto;
 }
@@ -227,7 +234,19 @@ img {
         grid-template-rows: 1fr;
     }
 
-} 
+    /*-------------- cards css --------------*/
+    #cards {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: fit-content;
+        max-width: auto;
+        /* display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
+    }
+}
+
 /* --------------------------------media large----------------------- */
 /* @media screen and (min-width: 600px) {
 
