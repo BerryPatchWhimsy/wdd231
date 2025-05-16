@@ -4,63 +4,63 @@
             "businessName": "Cavalier",
             "address": "121 Main St",
             "phone": "775-345-6677",
-            "url": "http://www.cavalier.com",
+            "url": "",
             "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cavalier.webp",
-            "memershipLevel": "1",
+            "memershipLevel": 1,
             "type": "Convenient"
         },
         {
             "businessName": "Khourys Market",
             "address": "623 Main St",
             "phone": "775-345-6688",
-            "url": "http://www.khourysmarket.com",
+            "url": "https://www.khourysmarket.com/locations/carlin",
             "image": "images/khourys.webp",
-            "memershipLevel": "3",
+            "memershipLevel": 3,
             "type": "Grocery"
         },
         {
             "businessName": "Subway",
             "address": "321 Main St",
             "phone": "775-345-6633",
-            "url": "http://www.carlinsubway.com",
+            "url": "https://restaurants.subway.com/united-states/nv/carlin/791-10-st",
             "image": "images/subway.webp",
-            "memershipLevel": "2",
+            "memershipLevel": 2,
             "type": "Fast Food"
         },
         {
             "businessName": "One9",
             "address": "500 Main St",
             "phone": "775-345-1123",
-            "url": "http://www.the1nine.com",
+            "url": "https://locations.pilotflyingj.com/us/nv/carlin/791-tenth-street",
             "image": "images/subway.webp",
-            "memershipLevel": "1",
+            "memershipLevel": 1,
             "type": "Gas Station"
         },
         {
             "businessName": "Carlin Salon",
             "address": "129 Main St",
             "phone": "775-345-3489",
-            "url": "http://www.carlinsalon.com",
+            "url": "",
             "image": "images/carlin-salon.webp",
-            "memershipLevel": "2",
+            "memershipLevel": 2,
             "type": "Beauty"
         },
         {
             "businessName": "Carlin Cafe",
             "address": "123 Main St",
             "phone": "775-345-6677",
-            "url": "http://www.carlincafe.com",
+            "url": "",
             "image": "images/carlin-cafe.webp",
-            "memershipLevel": "1",
+            "memershipLevel": 1,
             "type": "Restaurant"
         },
         {
             "businessName": "Chin's Cafe",
             "address": "224 Main St",
             "phone": "775-345-2345",
-            "url": "http://www.chinscafe.com",
+            "url": "",
             "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.yelp.com%2Fbiz%2Fchins-cafe-carlin&psig=AOvVaw2Tcd40ZFT-xRDdxBKHTexa&ust=1747441927524000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD50s7epo0DFQAAAAAdAAAAABAE",
-            "memershipLevel": "3",
+            "memershipLevel": 3,
             "type": "Restaurant"
         }
             
