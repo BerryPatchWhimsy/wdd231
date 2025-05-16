@@ -2,16 +2,14 @@
     "members": [
         {
             "businessName": "Cavalier",
-            "details": [
-                {
-                    "address": "121 Main St",
-                    "phone": "775-345-6677",
-                    "url": "http://www.cavalier.com",
-                    "image": "images/cavalier.webp",
-                    "memershipLevel": "1",
-                    "type": "Convenient"
-                }
-            ]
+            "address": "121 Main St",
+            "phone": "775-345-6677",
+            "url": "http://www.cavalier.com",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cavalier.webp",
+            "memershipLevel": "1",
+            "type": "Convenient"
+                
+            
         },
         {
             "businessName": "Khourys Market",

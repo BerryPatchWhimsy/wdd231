@@ -1,4 +1,4 @@
-const membersCC = data/members.json;
+const membersCC = "https://BerryPatchWhimsy.github.io/wdd231/chamber/data/members.json";
 
 const cards = document.querySelector("#cards");
 
@@ -23,11 +23,15 @@ const displayMembers = (members) => {
         card.appendChild(address);
 
         let phone = document.createElement("p");
-        phone.textContent = member.phone;
+        phone.textContent = `${member.phone}`;
         card.appendChild(phone);
 
+        let website = document.createElement("a");
+        website.setAttribute("href", member.url);
+        // website.setAttribute("title", "_blank");
+
         let picture = document.createElement("img");
-        picture.src = member.image;
+        picture.src = member.imageurl;
         picture.alt = name;
         picture.loading = `lazy`;
         picture.setAttribute('width', '300');
