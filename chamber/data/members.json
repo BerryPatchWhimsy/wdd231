@@ -14,7 +14,7 @@
             "address": "623 Main St",
             "phone": "775-345-6688",
             "url": "https://www.khourysmarket.com/locations/carlin",
-            "image": "images/khourys.webp",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/khourys.webp",
             "memershipLevel": 3,
             "type": "Grocery"
         },
@@ -23,7 +23,7 @@
             "address": "321 Main St",
             "phone": "775-345-6633",
             "url": "https://restaurants.subway.com/united-states/nv/carlin/791-10-st",
-            "image": "images/subway.webp",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/subway.webp",
             "memershipLevel": 2,
             "type": "Fast Food"
         },
@@ -32,7 +32,7 @@
             "address": "500 Main St",
             "phone": "775-345-1123",
             "url": "https://locations.pilotflyingj.com/us/nv/carlin/791-tenth-street",
-            "image": "images/subway.webp",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/subway.webp",
             "memershipLevel": 1,
             "type": "Gas Station"
         },
@@ -41,7 +41,7 @@
             "address": "129 Main St",
             "phone": "775-345-3489",
             "url": "",
-            "image": "images/carlin-salon.webp",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/carlin-salon.webp",
             "memershipLevel": 2,
             "type": "Beauty"
         },
@@ -50,7 +50,7 @@
             "address": "123 Main St",
             "phone": "775-345-6677",
             "url": "",
-            "image": "images/carlin-cafe.webp",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/carlin-cafe.webp",
             "memershipLevel": 1,
             "type": "Restaurant"
         },
@@ -59,7 +59,7 @@
             "address": "224 Main St",
             "phone": "775-345-2345",
             "url": "",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.yelp.com%2Fbiz%2Fchins-cafe-carlin&psig=AOvVaw2Tcd40ZFT-xRDdxBKHTexa&ust=1747441927524000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD50s7epo0DFQAAAAAdAAAAABAE",
+            "image": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/chins-cafe.webp",
             "memershipLevel": 3,
             "type": "Restaurant"
         }
