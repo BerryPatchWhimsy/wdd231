@@ -1,8 +1,8 @@
 /*---- Basic CSS for the directory page ----*/
 :root {
     --primary-color: rgb(0, 48, 73);
-    --secondary-color: rgb(247, 127, 0);
-    --background-color: rgb(214, 40, 40);
+    --secondary-color: rgb(162, 198, 217);
+    --background-color: rgb(185, 32, 32);
     --accent-color: rgb(252, 191, 73);
 
     --text-color: black;
@@ -43,7 +43,9 @@ footer {
 }
 
 .container p {
-    font-size: 5vw;
+    font-size: 6vw;
+    color: white;
+    font-weight: bold;
 }
 
 .logo {
@@ -55,6 +57,7 @@ footer {
 #name {
     font-size: 8vw;
     font-style: italic;
+    color: white;
 }
 
 #menu {
@@ -80,8 +83,8 @@ footer {
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);
-    border-bottom: 1px solid var(--background-color);
-    border-radius: 0 0 5px 5px;
+    /* border-bottom: 1px solid var(--background-color); */
+    /* border-radius: 0 0 5px 5px; */
 }
 
 .navigation a {
@@ -92,6 +95,7 @@ footer {
     text-align: center;
     transition: .5s;
     font-size: 5vw;
+    background-color: var(--primary-color);
 }
 
 .navigation a:hover {
@@ -122,6 +126,23 @@ footer {
     border: 1px solid var(--accent-color);
 }
 
+.cardMenu {
+    display: flex;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--background-color);
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+}
+
+.cardMenu button {
+    padding: .35rem;
+    margin: .25rem 0;
+}
+
+#grid {
+    margin-right: 1rem;
+}
+
 
 /*--------- Basics for footer ---------*/
 
@@ -129,17 +150,26 @@ footer {
     border-radius: 5px 5px 0 0;
 }
 
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
 .carlinCC {
     font-style: italic;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .address,
 .phone,
 .email {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
+.email a {
+    color: white;
+    text-decoration: underline;
+}
 .social p {
     display: none;
 }
@@ -153,12 +183,12 @@ footer {
 }
 
 .socialLinks a img {
-    max-width: 30px;
+    max-width: 6vw;
     height: auto;
 }
 
 .copywrite {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 /*-------------- cards css --------------*/
@@ -169,7 +199,7 @@ main {
 }
 
 h2 {
-    color: var(--text-color);
+    color: white;
     background-color: var(--background-color);
     padding: .5rem;
     font-size: 5vw;
@@ -191,17 +221,56 @@ section {
     margin: .5rem;
     padding: .5rem;
     text-align: center;
+    max-width: 250px;
 }
 
 section p {
     font-size: 4vw;
+    padding-top: .5rem;
 }
 
 img {
     border-radius: 5px;
-    max-width: 250px;
     width: 100%;
     height: auto;
+    margin-top: .5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: .25rem;
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 3vw;
+}
+.list section p {
+    font-size: 2vw;
+}
+
+.list section a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.list section:nth-child(even) {
+    background-color: var(--secondary-color);
 }
 
 
@@ -210,7 +279,8 @@ img {
     body {
         margin: 0 auto;
         justify-content: center;
-        max-width: 1200px;
+        max-width: 100%;/*prevent horizontal scroll*/
+        overflow-x: hidden;/*prevent horizontal scroll*/
     }
 
     header {
@@ -224,6 +294,7 @@ img {
     .navigation {
         flex-direction: row;
         justify-content: space-evenly;
+        padding: .5rem;
     }
 
     .navigation li {
@@ -234,17 +305,73 @@ img {
         grid-template-rows: 1fr;
     }
 
+    footer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .address,
+    .phone,
+    .email {
+        font-size: 1.25rem;
+    }
+
+    .carlinCC {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    .copywrite {
+        font-size: 1.25rem;
+        margin-left: .5rem;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .socialLinks {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .socialLinks a img {
+        max-width: 3rem;
+        height: auto;
+        margin: .5rem;
+    }
+
     /*-------------- cards css --------------*/
     #cards {
         justify-content: center;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        max-height: fit-content;
-        max-width: auto;
+        
+        margin: 1rem;
         /* display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
     }
+
+    section {
+        max-width: 300px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    
 }
 
 /* --------------------------------media large----------------------- */

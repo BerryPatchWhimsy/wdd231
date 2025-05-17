@@ -10,6 +10,22 @@ async function getMemberData() {
 
 getMemberData();
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+}
+);
+
+listbutton.addEventListener("click", showlist); 
+
+function showlist() {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+}
+
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement("section");
@@ -34,8 +50,8 @@ const displayMembers = (members) => {
         picture.src = member.imageurl;
         picture.alt = name;
         picture.loading = `lazy`;
-        // picture.setAttribute('width', '300');
-        // picture.setAttribute('height', '150');
+        picture.setAttribute('width', '300px');
+        picture.setAttribute('height', '150px');
         card.appendChild(picture);
 
         cards.appendChild(card);

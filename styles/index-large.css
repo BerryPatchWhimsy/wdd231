@@ -3,13 +3,12 @@
     body,
     header,
     footer {
-        max-width: 1200px;
+        max-width: 100%;
+        overflow-x: hidden;
         margin: 0 auto;
     }
 
-    body {
-        max-height: fit-content;
-    }
+    
 
     header {
         align-items: center;

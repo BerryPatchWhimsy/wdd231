@@ -43,12 +43,12 @@ header div {
 }
 
 #name {
-    font-size: 2rem;
+    font-size: 6vw;
     align-content: center;
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 4vw;
     border: 0;
     background: none;
     position: absolute;
@@ -85,7 +85,7 @@ header div {
     text-align: center;
     transition: .5s;
     /* font-size: clamp(2rem, 5vmin, 1.5); */
-    font-size: 1.5rem;
+    font-size: 4vw;
     font-weight: bolder;
 }
 
