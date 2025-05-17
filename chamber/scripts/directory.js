@@ -50,8 +50,8 @@ const displayMembers = (members) => {
         picture.src = member.imageurl;
         picture.alt = name;
         picture.loading = `lazy`;
-        picture.setAttribute('width', '300px');
-        picture.setAttribute('height', '150px');
+        picture.setAttribute('width', '300');
+        picture.setAttribute('height', '150');
         card.appendChild(picture);
 
         cards.appendChild(card);

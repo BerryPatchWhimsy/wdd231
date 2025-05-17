@@ -5,7 +5,7 @@
             "address": "121 Main St",
             "phone": "775-345-6677",
             "url": "",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cavalier.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cavalier-icon.svg",
             "memershipLevel": 1,
             "type": "Convenient"
         },
@@ -14,7 +14,7 @@
             "address": "623 Main St",
             "phone": "775-345-6688",
             "url": "https://www.khourysmarket.com/locations/carlin",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/khourys.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/khourys.svg",
             "memershipLevel": 3,
             "type": "Grocery"
         },
@@ -23,7 +23,7 @@
             "address": "321 Main St",
             "phone": "775-345-6633",
             "url": "https://restaurants.subway.com/united-states/nv/carlin/791-10-st",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/subway.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/subway.svg",
             "memershipLevel": 2,
             "type": "Fast Food"
         },
@@ -32,7 +32,7 @@
             "address": "500 Main St",
             "phone": "775-345-1123",
             "url": "https://locations.pilotflyingj.com/us/nv/carlin/791-tenth-street",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/one9.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/one9.svg",
             "memershipLevel": 1,
             "type": "Gas Station"
         },
@@ -41,7 +41,7 @@
             "address": "129 Main St",
             "phone": "775-345-3489",
             "url": "",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/carlin-salon.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/salon.svg",
             "memershipLevel": 2,
             "type": "Beauty"
         },
@@ -50,7 +50,7 @@
             "address": "123 Main St",
             "phone": "775-345-6677",
             "url": "",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/carlin-cafe.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cafe.svg",
             "memershipLevel": 1,
             "type": "Restaurant"
         },
@@ -59,7 +59,7 @@
             "address": "224 Main St",
             "phone": "775-345-2345",
             "url": "",
-            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/chins-cafe.webp",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/chins.svg",
             "memershipLevel": 3,
             "type": "Restaurant"
         }
