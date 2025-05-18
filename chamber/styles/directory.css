@@ -52,6 +52,8 @@ footer {
     max-width: 55px;
     height: auto;
     margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
 }
 
 #name {
@@ -65,7 +67,7 @@ footer {
     border: 0;
     background: none;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
 }
 
@@ -170,9 +172,8 @@ footer p {
     color: white;
     text-decoration: underline;
 }
-.social p {
-    display: none;
-}
+
+
 
 .socialLinks {
     display: flex;
@@ -183,7 +184,7 @@ footer p {
 }
 
 .socialLinks a img {
-    max-width: 6vw;
+    max-width: 30px;
     height: auto;
 }
 
@@ -221,6 +222,10 @@ section {
     margin: .5rem;
     padding: .5rem;
     text-align: center;
+    
+}
+
+.grid section {
     max-width: 250px;
 }
 
@@ -229,16 +234,26 @@ section p {
     padding-top: .5rem;
 }
 
-img {
+section a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+section {
     border-radius: 5px;
     width: 100%;
     height: auto;
     margin-top: .5rem;
 }
 
+section img {
+    margin-top: .5rem;
+}
+
 .list {
-    display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .list section {
@@ -246,9 +261,10 @@ img {
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
     padding: .25rem;
+    max-width: 100%;
 }
 
-.list section > * {
+.list section>* {
     margin: 0 1rem;
 }
 
@@ -259,6 +275,7 @@ img {
 .list section h2 {
     font-size: 3vw;
 }
+
 .list section p {
     font-size: 2vw;
 }
@@ -279,8 +296,10 @@ img {
     body {
         margin: 0 auto;
         justify-content: center;
-        max-width: 100%;/*prevent horizontal scroll*/
-        overflow-x: hidden;/*prevent horizontal scroll*/
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
     }
 
     header {
@@ -328,9 +347,9 @@ img {
     }
 
     .social {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         align-items: center;
         margin: 0 auto;
     }
@@ -341,9 +360,14 @@ img {
     }
 
     .socialLinks a img {
-        max-width: 3rem;
+        max-width: 50px;
         height: auto;
         margin: .5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     /*-------------- cards css --------------*/
@@ -352,7 +376,7 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
+
         margin: 1rem;
         /* display: grid;
         grid-gap: 1rem;
@@ -371,7 +395,9 @@ img {
         font-size: 1.5rem;
     }
 
-    
+    .list
+
+
 }
 
 /* --------------------------------media large----------------------- */

@@ -34,6 +34,14 @@ const displayMembers = (members) => {
         name.textContent = member.businessName;
         card.appendChild(name);
 
+        let picture = document.createElement("img");
+        picture.src = member.imageurl;
+        picture.alt = name;
+        picture.loading = `lazy`;
+        picture.setAttribute('width', '150px');
+        picture.setAttribute('height', '75px');
+        card.appendChild(picture);
+
         let address = document.createElement("p");
         address.textContent = `${member.address}`;
         card.appendChild(address);
@@ -45,14 +53,6 @@ const displayMembers = (members) => {
         let website = document.createElement("a");
         website.setAttribute("href", member.url);
         // website.setAttribute("title", "_blank");
-
-        let picture = document.createElement("img");
-        picture.src = member.imageurl;
-        picture.alt = name;
-        picture.loading = `lazy`;
-        picture.setAttribute('width', '300');
-        picture.setAttribute('height', '150');
-        card.appendChild(picture);
 
         cards.appendChild(card);
     });
