@@ -49,11 +49,15 @@ footer {
 }
 
 .logo {
-    max-width: 55px;
+    max-width: 50px;
     height: auto;
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 #name {
@@ -210,19 +214,20 @@ h2 {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
 }
 
 section {
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 4px 8px var(--primary-color);
+    box-shadow: 0 1px 8px var(--primary-color);
     margin: .5rem;
     padding: .5rem;
     text-align: center;
     
+}
+
+#grid, #list {
+    margin: .75rem;
 }
 
 .grid section {
@@ -260,8 +265,9 @@ section img {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
-    padding: .25rem;
+    padding: .5rem;
     max-width: 100%;
+    border: 1px solid var(--primary-color);
 }
 
 .list section>* {
@@ -273,11 +279,11 @@ section img {
 }
 
 .list section h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 .list section p {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .list section a {
@@ -324,10 +330,82 @@ section img {
         grid-template-rows: 1fr;
     }
 
+    
+
+    /*-------------- cards css --------------*/
+    #cards {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin: 1rem;
+        /* display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
+    }
+
+    #grid,
+    #list {
+        margin-top: .25rem;  
+        font-size: 4vw; 
+    }
+
+    section {
+        max-width: 300px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    .list section  {
+        padding: .5rem;
+        border: 1px solid var(--primary-color);
+    }
+
+
+}
+
+/* --------------------------------media large----------------------- */
+@media screen and (min-width: 600px) {
+    .container p {
+        font-size: 2.5rem;        
+    }
+    
+    .logo {
+        max-width: 100px;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        justify-content: center;     
+    }
+
+    
+    .navigation a {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #grid, #list {
+        margin: 0 1rem 1rem 1rem;  
+        font-size: 1.75rem; 
+    }
+
     footer {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1rem;
     }
 
     .address,
@@ -339,6 +417,10 @@ section img {
     .carlinCC {
         font-style: italic;
         font-size: 1.5rem;
+    }
+
+    .copywrite, .info {
+        text-align: center;
     }
 
     .copywrite {
@@ -370,37 +452,4 @@ section img {
         height: auto;
     }
 
-    /*-------------- cards css --------------*/
-    #cards {
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        margin: 1rem;
-        /* display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
-    }
-
-    section {
-        max-width: 300px;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    section p {
-        font-size: 1.5rem;
-    }
-
-    .list
-
-
 }
-
-/* --------------------------------media large----------------------- */
-/* @media screen and (min-width: 600px) {
-
-} */

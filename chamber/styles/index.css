@@ -1,8 +1,8 @@
 /*---- Basic CSS for the directory page ----*/
 :root {
     --primary-color: rgb(0, 48, 73);
-    --secondary-color: rgb(247, 127, 0);
-    --background-color: rgb(214, 40, 40);
+    --secondary-color: rgb(162, 198, 217);
+    --background-color: rgb(185, 32, 32);
     --accent-color: rgb(252, 191, 73);
 
     --text-color: black;
@@ -43,18 +43,28 @@ footer {
 }
 
 .container p {
-    font-size: 5vw;
+    font-size: 6vw;
+    color: white;
+    font-weight: bold;
 }
 
 .logo {
-    max-width: 55px;
+    max-width: 50px;
     height: auto;
     margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 #name {
     font-size: 8vw;
     font-style: italic;
+    color: white;
 }
 
 #menu {
@@ -62,7 +72,7 @@ footer {
     border: 0;
     background: none;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
 }
 
@@ -80,8 +90,8 @@ footer {
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);
-    border-bottom: 1px solid var(--background-color);
-    border-radius: 0 0 5px 5px;
+    /* border-bottom: 1px solid var(--background-color); */
+    /* border-radius: 0 0 5px 5px; */
 }
 
 .navigation a {
@@ -92,6 +102,7 @@ footer {
     text-align: center;
     transition: .5s;
     font-size: 5vw;
+    background-color: var(--primary-color);
 }
 
 .navigation a:hover {
@@ -122,6 +133,23 @@ footer {
     border: 1px solid var(--accent-color);
 }
 
+.cardMenu {
+    display: flex;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--background-color);
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+}
+
+.cardMenu button {
+    padding: .35rem;
+    margin: .25rem 0;
+}
+
+#grid {
+    margin-right: 1rem;
+}
+
 
 /*--------- Basics for footer ---------*/
 
@@ -129,20 +157,28 @@ footer {
     border-radius: 5px 5px 0 0;
 }
 
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
 .carlinCC {
     font-style: italic;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .address,
 .phone,
 .email {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
-.social p {
-    display: none;
+.email a {
+    color: white;
+    text-decoration: underline;
 }
+
+
 
 .socialLinks {
     display: flex;
@@ -158,15 +194,120 @@ footer {
 }
 
 .copywrite {
-    font-size: 4vw;
+    font-size: 2vw;
+}
 
+/*-------------- cards css --------------*/
+
+main {
+    background-color: white;
 
 }
+
+h2 {
+    color: white;
+    background-color: var(--background-color);
+    padding: .5rem;
+    font-size: 5vw;
+}
+
+#cards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px var(--primary-color);
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+
+}
+
+#grid,
+#list {
+    margin: .75rem;
+}
+
+.grid section {
+    max-width: 250px;
+}
+
+section p {
+    font-size: 4vw;
+    padding-top: .5rem;
+}
+
+section a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+section {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: .5rem;
+}
+
+section img {
+    margin-top: .5rem;
+}
+
+.list {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: .5rem;
+    max-width: 100%;
+    border: 1px solid var(--primary-color);
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 3.5vw;
+}
+
+.list section p {
+    font-size: 3vw;
+}
+
+.list section a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.list section:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
 
 /* --------------------------------media medium--------------------- */
 @media screen and (min-width: 320px) {
     body {
-        max-height: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
     }
 
     header {
@@ -180,6 +321,7 @@ footer {
     .navigation {
         flex-direction: row;
         justify-content: space-evenly;
+        padding: .5rem;
     }
 
     .navigation li {
@@ -189,9 +331,129 @@ footer {
     #animateMe {
         grid-template-rows: 1fr;
     }
+
+
+
+    /*-------------- cards css --------------*/
+    #cards {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin: 1rem;
+        /* display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
+    }
+
+    #grid,
+    #list {
+        margin-top: .25rem;
+        font-size: 4vw;
+    }
+
+    section {
+        max-width: 300px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    .list section {
+        padding: .5rem;
+        border: 1px solid var(--primary-color);
+    }
+
+
 }
 
 /* --------------------------------media large----------------------- */
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
+    .container p {
+        font-size: 2.5rem;
+    }
 
-} */
+    .logo {
+        max-width: 100px;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+
+    .navigation a {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #grid,
+    #list {
+        margin: 0 1rem 1rem 1rem;
+        font-size: 1.75rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1rem;
+    }
+
+    .address,
+    .phone,
+    .email {
+        font-size: 1.25rem;
+    }
+
+    .carlinCC {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    .copywrite,
+    .info {
+        text-align: center;
+    }
+
+    .copywrite {
+        font-size: 1.25rem;
+        margin-left: .5rem;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .socialLinks {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .socialLinks a img {
+        max-width: 50px;
+        height: auto;
+        margin: .5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
