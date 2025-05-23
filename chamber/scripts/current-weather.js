@@ -1,5 +1,3 @@
-const joinbutton = document.querySelector("#join");
-
 const weatherContainer = document.querySelector(".weather");
 
 const temp = document.querySelector("#current-temp");
@@ -38,3 +36,9 @@ function displayResults(data) {
     weatherIcon.setAttribute('alt', data.weather[0].description);
     caption.textContent = `${desc}`;
 }
+
+
+// <h3>Carlin Museum</h3>
+// <p>Location: 123 Maple St, Carlin, NV 89822</p>
+// <p>Description: An informative little museum full of rich history of Carlin and its people.</p>
+// <p>Website: <a href="https://carlinhistoricalsociety.com/museum-exhibits/" target="_blank">carlinmuseum.com</a></p>

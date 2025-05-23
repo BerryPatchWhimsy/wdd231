@@ -15,7 +15,8 @@
 
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/header.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/current-weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,50 +71,53 @@
                 <h3>Carlin Rodeo</h3>
                 <p>Date: July 15-16, 2024</p>
                 <p>Location: Carlin Fairgrounds</p>
-                <p>Description: Join us for the annual Carlin Rodeo featuring bull riding, barrel racing, and more!</p>
+                <p>Join us for the annual Carlin Rodeo featuring bull riding, barrel racing, and more!</p>
             </div>
             <div class="event">
                 <h3>Carlin Arts Festival</h3>
                 <p>Date: August 20-22, 2024</p>
                 <p>Location: Downtown Carlin</p>
-                <p>Description: Celebrate local artists and craftspeople at the Carlin Arts Festival.</p>
+                <p>Celebrate local artists and craftspeople at the Carlin Arts Festival.</p>
             </div>
             <div class="event">
                 <h3>Carlin Fall Festival</h3>
                 <p>Date: September 30, 2024</p>
                 <p>Location: Carlin Park</p>
-                <p>Description: Enjoy food, games, and fun for the whole family at the Carlin Fall Festival.</p>
+                <p>Enjoy food, games, and fun for the whole family at the Carlin Fall Festival.</p>
             </div>
         </div>
         <div class="weather">
-            <h2>Weather</h2>
-            <h3 id="town">Carlin, Nevada</h3>
-            <p class="temp">The current temperature is: <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption id="weather-description"></figcaption>
-            </figure>
+            <div class="current">
+                <h2>Current Weather</h2>
+                <h3 id="town">Carlin, Nevada</h3>
+                <p class="temp">The current temperature is: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+            </div>
+            <div class="forecast">
+                <h2>3 Day Forecast</h2>
+                <div class="day">
+                    <p id="day1"></p>
+                    <p id="temp1"></p>
+                    <img id="icon1" src="" alt="">
+                </div>
+                <div class="day">
+                    <p id="day2"></p>
+                    <p id="temp2"></p>
+                    <img id="icon2" src="" alt="">
+                </div>
+                <div class="day">
+                    <p id="day3"></p>
+                    <p id="temp3"></p>
+                    <img id="icon3" src="" alt="">
+                </div>
+            </div>
         </div>
         <div class="spotlight">
             <h2>Business Spotlight</h2>
-            <div class="business">
-                <h3>Carlin Museum</h3>
-                <p>Location: 123 Maple St, Carlin, NV 89822</p>
-                <p>Description: An informative little museum full of rich history of Carlin and its people.</p>
-                <p>Website: <a href="https://carlinhistoricalsociety.com/museum-exhibits/" target="_blank">carlinmuseum.com</a></p>
-            </div>
-            <div class="business">
-                <h3>Carlin Hardware</h3>
-                <p>Location: 3122 Bush St, Carlin, NV 89822</p>
-                <p>Description: Your one-stop shop for all your hardware needs.</p>
-                <p>Website: <a href="#" target="_blank">carlinhardware.com</a></p>
-            </div>
-            <div class="business">
-                <h3>Carlin Library</h3>
-                <p>Location: 2020 Thomas Circle, Carlin, NV 89822</p>
-                <p>Description: Pleasant and quaint library where you can find great reads, or fun family activities.</p>
-                <p>Website: <a href="https://www.exploremybrary.org/173/Carlin-Mybrary" target="_blank">carlinlibrary.com</a></p>
-            </div>
+            <div class="business"></div>
         </div>
     </main>
     <footer>

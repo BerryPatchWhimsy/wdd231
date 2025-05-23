@@ -249,7 +249,7 @@ h2 {
     color: white;
     background-color: var(--background-color);
     padding: .5rem;
-    font-size: 6.5vw;
+    font-size: 7.5vw;
 }
 
 .event{
@@ -268,11 +268,11 @@ h2 {
     color: white;
     padding: .5rem;
     border-radius: 3px 3px 0 0;
-    font-size: 5.5vw;
+    font-size: 7vw;
 }
 
 .event p {
-    font-size: 5vw;
+    font-size: 6.5vw;
     color: var(--text-color);
     margin: .5rem;
 
@@ -294,7 +294,7 @@ h2 {
 
 .temp,
 figcaption {
-    font-size: 5vw;
+    font-size: 6.5vw;
     color: var(--text-color);
     margin: .5rem;
 }
@@ -312,6 +312,29 @@ figcaption {
     grid-gap: .5rem;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
+}
+
+.business {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    grid-gap: 1rem;
+    margin: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.business h3 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem;
+    border-radius: 3px 3px 0 0;
+    font-size: 7vw;
+}
+
+.business p {
+    font-size: 6.5vw;
+    margin-left: .5rem;
 }
 
 /* --------------------------------media medium--------------------- */
