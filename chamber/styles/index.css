@@ -78,11 +78,12 @@ footer {
 
 #menu::before {
     content: "☰";
-    color: var(--text-color);
+    color: white;
 }
 
 #menu.open::before {
-    content: "✖️";
+    content: "ⓧ";
+    color: white;
 }
 
 .navigation {
@@ -90,8 +91,7 @@ footer {
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);
-    /* border-bottom: 1px solid var(--background-color); */
-    /* border-radius: 0 0 5px 5px; */
+    
 }
 
 .navigation a {
@@ -107,10 +107,13 @@ footer {
 
 .navigation a:hover {
     color: var(--primary-color);
-    background-color: white;
+    /* background-color: white; */
     text-decoration: underline;
     font-weight: bolder;
     border-radius: 3px;
+    background-color: var(--accent-color);
+    
+    
 }
 
 #animateMe {
@@ -130,26 +133,8 @@ footer {
 .active::before {
     content: " › Home";
     text-decoration: underline;
-    border: 1px solid var(--accent-color);
+    
 }
-
-.cardMenu {
-    display: flex;
-    background-color: var(--primary-color);
-    border-bottom: 1px solid var(--background-color);
-    border-radius: 0 0 5px 5px;
-    justify-content: center;
-}
-
-.cardMenu button {
-    padding: .35rem;
-    margin: .25rem 0;
-}
-
-#grid {
-    margin-right: 1rem;
-}
-
 
 /*--------- Basics for footer ---------*/
 
@@ -178,8 +163,6 @@ footer p {
     text-decoration: underline;
 }
 
-
-
 .socialLinks {
     display: flex;
     flex-wrap: wrap;
@@ -197,107 +180,76 @@ footer p {
     font-size: 2vw;
 }
 
-/*-------------- cards css --------------*/
+/*-------------- main body css --------------*/
 
 main {
     background-color: white;
+}
 
+.hero {
+    position: relative;
+
+}
+
+.hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+.hero p {
+    display: none;
+}
+
+#join {
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 6.5vw;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#join:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 h2 {
     color: white;
     background-color: var(--background-color);
     padding: .5rem;
-    font-size: 5vw;
+    font-size: 6.5vw;
 }
 
-#cards {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 1px 8px var(--primary-color);
-    margin: .5rem;
-    padding: .5rem;
-    text-align: center;
-
-}
-
-#grid,
-#list {
-    margin: .75rem;
-}
-
-.grid section {
-    max-width: 250px;
-}
-
-section p {
-    font-size: 4vw;
-    padding-top: .5rem;
-}
-
-section a {
-    text-decoration: underline;
-    color: var(--text-color);
-}
-
-section {
-    border-radius: 5px;
-    width: 100%;
-    height: auto;
-    margin-top: .5rem;
-}
-
-section img {
-    margin-top: .5rem;
-}
-
-.list {
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.list section {
+.event{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    margin: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    
+}
+
+.event h3 {
+    background-color: var(--primary-color);
+    color: white;
     padding: .5rem;
-    max-width: 100%;
-    border: 1px solid var(--primary-color);
+    border-radius: 3px 3px 0 0;
 }
-
-.list section>* {
-    margin: 0 1rem;
-}
-
-.list section img {
-    display: none;
-}
-
-.list section h2 {
-    font-size: 3.5vw;
-}
-
-.list section p {
-    font-size: 3vw;
-}
-
-.list section a {
-    font-size: 2vw;
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.list section:nth-child(even) {
-    background-color: var(--secondary-color);
-}
-
 
 /* --------------------------------media medium--------------------- */
 @media screen and (min-width: 320px) {
@@ -334,44 +286,10 @@ section img {
 
 
 
-    /*-------------- cards css --------------*/
-    #cards {
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        margin: 1rem;
-        /* display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, .7fr)); */
+    /*-------------- body css --------------*/
+    .hero p {
+        display: block;
     }
-
-    #grid,
-    #list {
-        margin-top: .25rem;
-        font-size: 4vw;
-    }
-
-    section {
-        max-width: 300px;
-    }
-
-    section h2 {
-        font-size: 2rem;
-        border-radius: 5px;
-    }
-
-    section p {
-        font-size: 1.5rem;
-    }
-
-    .list section {
-        padding: .5rem;
-        border: 1px solid var(--primary-color);
-    }
-
-
 }
 
 /* --------------------------------media large----------------------- */
@@ -398,11 +316,6 @@ section img {
         margin: 1rem;
     }
 
-    #grid,
-    #list {
-        margin: 0 1rem 1rem 1rem;
-        font-size: 1.75rem;
-    }
 
     footer {
         display: grid;

@@ -77,11 +77,12 @@ footer {
 
 #menu::before {
     content: "☰";
-    color: var(--text-color);
+    color: white;
 }
 
 #menu.open::before {
-    content: "✖️";
+    content: "ⓧ";
+    color: white;
 }
 
 .navigation {
@@ -89,8 +90,6 @@ footer {
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);
-    /* border-bottom: 1px solid var(--background-color); */
-    /* border-radius: 0 0 5px 5px; */
 }
 
 .navigation a {
@@ -129,7 +128,7 @@ footer {
 .active::before {
     content: " › Directory";
     text-decoration: underline;
-    border: 1px solid var(--accent-color);
+    
 }
 
 .cardMenu {

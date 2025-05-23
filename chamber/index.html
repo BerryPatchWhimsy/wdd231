@@ -15,7 +15,7 @@
 
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/header.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
             <picture class="logo">
                 <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
                 <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
-                <img src="images/carlin-chamber.ico" alt="Carlin Chamber Logo" loading="lazy" width="48" height="48">
+                <img src="images/logo-pic.svg" alt="Carlin Chamber Logo" loading="lazy" width="100" height="100">
             </picture>
             <div>
                 <span id="name"></span>
@@ -52,7 +52,67 @@
                 <li><a href="discover.html" title="Discover">Discover</a></li>
             </ul>
         </nav>
-        <section></section>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 320px)">
+                <source srcset="images/hero.webp" media="(max-width: 1200px)">
+                <img src="images/hero.webp" alt="Carlin Chamber of Commerce" width="1200" height="676">
+            </picture>
+            <article>
+                <h1>Welcome to the Carlin Chamber of Commerce</h1>
+                <p>Your gateway to local businesses and community events.</p>
+                <button id="join">Join Us!</button>
+            </article>
+        </div>
+        <div class="currentEvents">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Carlin Rodeo</h3>
+                <p>Date: July 15-16, 2024</p>
+                <p>Location: Carlin Fairgrounds</p>
+                <p>Description: Join us for the annual Carlin Rodeo featuring bull riding, barrel racing, and more!</p>
+            </div>
+            <div class="event">
+                <h3>Carlin Arts Festival</h3>
+                <p>Date: August 20-22, 2024</p>
+                <p>Location: Downtown Carlin</p>
+                <p>Description: Celebrate local artists and craftspeople at the Carlin Arts Festival.</p>
+            </div>
+            <div class="event">
+                <h3>Carlin Fall Festival</h3>
+                <p>Date: September 30, 2024</p>
+                <p>Location: Carlin Park</p>
+                <p>Description: Enjoy food, games, and fun for the whole family at the Carlin Fall Festival.</p>
+        </div>
+        <div class="weather">
+            <h2 id="town">Carlin, Nevada</h2>
+            <p>The current temperature is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <figcaption id="weather-description"></figcaption>
+            </figure>
+        </div>
+        <div class="spotlight">
+            <h2>Business Spotlight</h2>
+            <div class="business">
+                <h3>Carlin Coffee Co.</h3>
+                <p>Location: 456 Main St, Carlin, NV 89822</p>
+                <p>Description: A cozy coffee shop serving locally roasted coffee and delicious pastries.</p>
+                <p>Website: <a href="https://www.carlincoffeeco.com" target="_blank">carlincoffeeco.com</a></p>
+            </div>
+            <div class="business">
+                <h3>Carlin Hardware</h3>
+                <p>Location: 789 Main St, Carlin, NV 89822</p>
+                <p>Description: Your one-stop shop for all your hardware needs.</p>
+                <p>Website: <a href="https://www.carlinhardware.com" target="_blank">carlinhardware.com</a></p>
+            </div>
+            <div class="business">
+                <h3>Carlin Auto Repair</h3>
+                <p>Location: 101 Main St, Carlin, NV 89822</p>
+                <p>Description: Reliable auto repair services at affordable prices.</p>
+                <p>Website: <a href="https://www.carlinautorepair.com" target="_blank">carlinautorepair.com</a></p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="info">
