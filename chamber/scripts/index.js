@@ -1,6 +1,8 @@
 const joinbutton = document.querySelector("#join");
 
-const temp = document.querySelector("current-temp");
+const weatherContainer = document.querySelector(".weather");
+
+const temp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const caption = document.querySelector("#weather-description");
 

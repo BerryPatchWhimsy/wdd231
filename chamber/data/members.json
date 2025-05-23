@@ -4,7 +4,7 @@
             "businessName": "Cavalier",
             "address": "121 Main St",
             "phone": "775-345-6677",
-            "url": "",
+            "url": "#",
             "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cavalier-icon.svg",
             "memershipLevel": 1,
             "type": "Convenient"
@@ -40,7 +40,7 @@
             "businessName": "Carlin Salon",
             "address": "129 Main St",
             "phone": "775-345-3489",
-            "url": "",
+            "url": "https://www.facebook.com/shear.savagery.salon/",
             "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/salon.svg",
             "memershipLevel": 2,
             "type": "Beauty"
@@ -49,7 +49,7 @@
             "businessName": "Carlin Cafe",
             "address": "123 Main St",
             "phone": "775-345-6677",
-            "url": "",
+            "url": "#",
             "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/cafe.svg",
             "memershipLevel": 1,
             "type": "Restaurant"
@@ -58,10 +58,37 @@
             "businessName": "Chin's Cafe",
             "address": "224 Main St",
             "phone": "775-345-2345",
-            "url": "",
+            "url": "#",
             "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/chins.svg",
             "memershipLevel": 3,
             "type": "Restaurant"
+        },
+        {
+            "businessName": "Carlin Hardware",
+            "address": "3122 Bush St",
+            "phone": "775-309-1974",
+            "url": "#",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/hardware.svg",
+            "memershipLevel": 3,
+            "type": "Hardware"
+        },
+        {
+            "businessName": "Carlin Library",
+            "address": "2020 Thomas Circle",
+            "phone": "775-388-9277",
+            "url": "https://www.exploremybrary.org/173/Carlin-Mybrary",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/library.svg",
+            "memershipLevel": 3,
+            "type": "Library"
+        },
+        {
+            "businessName": "Carlin Museum",
+            "address": "123 Maple St",
+            "phone": "775-388-7373",
+            "url": "https://carlinhistoricalsociety.com/museum-exhibits/",
+            "imageurl": "https://BerryPatchWhimsy.github.io/wdd231/chamber/images/museum.svg",
+            "memershipLevel": 2,
+            "type": "Museum"
         }
             
     ]
