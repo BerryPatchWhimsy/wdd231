@@ -180,7 +180,7 @@ footer p {
     font-size: 2vw;
 }
 
-/*-------------- main body css --------------*/
+/*-------------- hero css --------------*/
 
 main {
     background-color: white;
@@ -226,6 +226,8 @@ main {
     text-decoration: underline;
 }
 
+/*-------------- events css --------------*/
+
 h2 {
     color: white;
     background-color: var(--background-color);
@@ -249,6 +251,22 @@ h2 {
     color: white;
     padding: .5rem;
     border-radius: 3px 3px 0 0;
+}
+
+/*-------------- weather css --------------*/
+.weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    margin: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+#current-temp {
+    font-family: var(--font-family);
+    color: var(--text-color);
+
 }
 
 /* --------------------------------media medium--------------------- */

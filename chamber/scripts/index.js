@@ -4,12 +4,12 @@ const temp = document.querySelector("current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const caption = document.querySelector("#weather-description");
 
-const apiKey = "fef381b00dd5f7bf318e599f2bac";
+const apiKey = "fef381b00dd5f7ee47bf318e599f2bac";
 const latitude = 40.71;
 const longitude = -116.10;
 const units = "imperial";
 
-const url = `//api.openweathermap.org/data/2.5/wether?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+const url = `//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
 async function apiFetch() {
     try {
@@ -30,5 +30,9 @@ apiFetch();
 
 function displayResults(data) {
     temp.innerHTML = `${data.main.temp}&deg;F`;
-    const 
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+    caption.textContent = `${desc}`;
 }
