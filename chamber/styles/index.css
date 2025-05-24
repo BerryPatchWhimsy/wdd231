@@ -288,7 +288,7 @@ h2 {
     border-radius: 5px;
 }
 
-.weather h3, .temp, .weather figure, figcaption {
+.weather h3, .temp, .weather figure, figcaption, .forecast p, .daily img{
     justify-self: center;
 }
 
@@ -298,7 +298,7 @@ figcaption {
     color: var(--text-color);
     margin: .5rem;
 }
-#current-temp {
+#current-temp, .forecast p {
     font-family: var(--font-family);
     color: var(--text-color);
 
