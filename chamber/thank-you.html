@@ -15,7 +15,7 @@
 
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/header.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,40 +52,7 @@
                 <li><a href="discover.html" title="Discover">Discover</a></li>
             </ul>
         </nav>
-        <h1>Join the Carlin Chamber of Commerce!</h1>
-
-        <form method="get" action="thank-you.html">
-            <fieldset class="contactInfo">
-                <legend>Contact Information</legend>
-                <label class="name">* First Name:<input type="text" id="firstName" name="firstName"
-                        title="customerFirstName" autocomplete="given-name" required></label>
-                <label class="name">* Last Name:<input type="text" id="lastName" name="lastName"
-                        title="customerLastName" autocomplete="family-name" required></label>
-                <label class="email">* Email:<input type="email" id="email" name="email" title="customerEmail"
-                        autocomplete="email" placeholder="cchamber@gmail.com" required></label>
-                <label class="phone">* Phone:<input type="tel" id="phone" name="phone" title="customerPhone"
-                        autocomplete="tel" placeholder="(775) 123-4567" required></label>
-            </fieldset>
-            <fieldset class="organizationInfo">
-                <legend>Organization Information</legend>
-                <label class="organization">* Organization Name:<input type="text" id="organization" name="organization"
-                        title="customerOrganization" autocomplete="organization" required></label>
-                <label class="organization">* Organization Title:<input type="text" id="orgTitle" name="organizationTitle"
-                        title="organizationTitle" autocomplete="organization-title" pattern="^[a-zA-Z\s-]{7,}$"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <div>Select one:</div>
-                <label class="membership"><input type="radio" name="membershipLevel" id="NPMembership">Non Profit</label>
-                <label class="membership"><input type="radio" name="membershipLevel" id="GoldMembership">Gold</label>
-                <label class="membership"><input type="radio" name="membershipLevel" id="SilverMembership">Silver</label>
-                <label class="membership"><input type="radio" name="membershipLevel" id="BronzeMembership">Bronze</label>
-            </fieldset>
-            <input class="button" type="submit" value="Join Chamber">    
-        </form>
-        <div class="membershipCards">
-
-        </div>
+        
     </main>
     <footer>
         <div class="info">

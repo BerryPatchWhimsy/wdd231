@@ -1,0 +1,52 @@
+{
+    "levels": [
+        {
+            "levelType": "NP",
+            "cost": "free",
+            "benefits": [
+                {
+                    "community events": "Free admission to community events",
+                    "training": false,
+                    "advertizing": false,
+                    "event discounts": true
+                }
+            ]
+        },
+        {
+            "levelType": "Bronze",
+            "cost": "50",
+            "benefits": [
+                {
+                    "community events": "Free admission to community events",
+                    "training": "Access to training programs",
+                    "advertizing": false,
+                    "event discounts": true
+                }
+            ]
+        },
+        {
+            "levelType": "Silver",
+            "cost": "75",
+            "benefits": [
+                {
+                    "community events": "Free admission to community events.",
+                    "training": "Access to training programs",
+                    "advertizing": "Have your organization advertized on our 'Business Spotlight'.",
+                    "event discounts": true
+                }
+            ]
+        },
+        {
+            "levelType": "Gold",
+            "cost": "100",
+            "benefits": [
+                {
+                    "community events": "Free admission to community events, Access to the Exclusive 'Evening With...' events.",
+                    "training": "Access to educational and training programs.",
+                    "advertizing": "Have your organization advertized on our 'Business Spotlight'.",
+                    "event discounts": true
+                }
+            ]
+        }
+    ]
+}

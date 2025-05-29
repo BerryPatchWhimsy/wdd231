@@ -1,0 +1,1 @@
+const memberLevels = "https://BerryPatchWhimsy.bithub.io/wdd231/chamber/data/member-levels.json";
