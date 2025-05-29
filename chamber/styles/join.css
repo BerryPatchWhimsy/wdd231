@@ -187,7 +187,7 @@ main {
 
 h1 {
     color: var(--primary-color);
-    font-size: 6vw;
+    font-size: 6.5vw;
     text-align: center;
     margin: 1rem;
 }
@@ -196,7 +196,7 @@ h2 {
     color: white;
     background-color: var(--background-color);
     padding: .5rem;
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 /*--------- form ---------*/
@@ -272,6 +272,34 @@ form input[type="submit"]:hover {
     font-weight: bold;
 }
 
+form div {
+    font-size: 4vw;
+}
+
+/*--------- membership cards ---------*/
+.membershipCards {
+    margin: 1rem 0;
+    text-align: center;
+    border: none;
+
+}
+
+.membershipCards section {
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    background-color: var(--background-color);
+    margin: 1rem;
+    box-shadow: 0 0 10px var(--text-color);
+    color: white;
+    align-items: center;
+}
+.membershipCards h2 {
+    margin: 0;
+}
+
+.membershipCards button {
+    font-size: 5vw;
+}
 
 /* --------------------------------media medium--------------------- */
 @media screen and (min-width: 320px) {
