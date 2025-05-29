@@ -80,7 +80,7 @@ const courses = [
     }
 ]
 
-createCourseCard(courses);
+createCourseButtons(courses);
 
 const allCoursesLink = document.querySelector("#all");
 const wddCoursesLink = document.querySelector("#wdd");
@@ -95,7 +95,7 @@ allCoursesLink.addEventListener("click", () => {
     let credits = calculateCredits(courses);
     document.querySelector("#credits").innerHTML = ` <span> ${credits}</span>`;
 
-    return createCourseCard(courses);
+    return createCourseButtons(courses);
 
     
 });
@@ -113,7 +113,7 @@ wddCoursesLink.addEventListener("click", () => {
             return `${subject} ${crs}`;
         }
     });
-    createCourseCard(wddCourses);
+    createCourseButtons(wddCourses);
 
     document.querySelector("#credits").innerHTML = "";
     let credits = calculateCredits(wddCourses);
@@ -133,18 +133,18 @@ cseCoursesLink.addEventListener("click", () => {
             return `${subject} ${crs}`;
         }
     });
-    createCourseCard(cseCourses);
+    createCourseButtons(cseCourses);
 
     document.querySelector("#credits").innerHTML = "";
     let credits = calculateCredits(cseCourses);
     document.querySelector("#credits").innerHTML = ` <span> ${credits}</span>`;
 });
 
-function createCourseCard(filteredCourses) {
+function createCourseButtons(filteredCourses) {
     document.querySelector(".certificate").innerHTML = "";
     filteredCourses.forEach((course) => {
-        let card = document.createElement("div");
-        card.classList.add = "card";
+        let card = document.createElement("button");
+        card.classList.add = "course-button";
 
         let courseInfo = document.createElement("p");
         let subject = course.subject;
@@ -160,8 +160,55 @@ function createCourseCard(filteredCourses) {
         }
 
         document.querySelector(".certificate").appendChild(card);
+
+        
+        let dialog = document.createElement("dialog");
+        dialog.classList.add("course-dialog");
+        dialog.id.add = `${subject}-${courseNumber}`;
+        dialog.innerHTML = `
+            <h3>${course.title}</h3>
+            <p>${course.credits} credits</p>
+            <p>Certificate: ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p>Technology: ${course.technology.join(', ')}</p>
+            <button class="close-button">❌</button>
+        `;
+        document.querySelector(".certificate").appendChild(dialog);
+        card.addEventListener("click", () => {
+            dialog.showModal();
+        });
+        
+        let closeModal = dialog.querySelector(".close-button");
+        closeModal.addEventListener("click", () => {
+            dialog.close();
+        });
+
     });
 }
+
+
+// function createCourseCard(filteredCourses) {
+//     document.querySelector(".certificate").innerHTML = "";
+//     filteredCourses.forEach((course) => {
+//         let card = document.createElement("div");
+//         card.classList.add = "card";
+
+//         let courseInfo = document.createElement("p");
+//         let subject = course.subject;
+//         let courseNumber = parseInt(course.number);
+//         courseInfo.textContent = `${subject} ${courseNumber}`;
+//         card.appendChild(courseInfo);
+
+//         let completion = course.completed;
+//         if (completion == true) {
+//             card.id = "completed";
+//         } else {
+//             card.id = "todo"
+//         }
+
+//         document.querySelector(".certificate").appendChild(card);
+//     });
+// }
 
 function calculateCredits(filteredCourses) {
     let totalCredits = 0;
@@ -170,13 +217,3 @@ function calculateCredits(filteredCourses) {
     });
     return totalCredits;
 }
-
-// function showCredits(filteredCourses) {
-//     filteredCourses.forEach((course) => {
-//         let creditParagraph = document.createElement("p");
-//     })
-// } 
-
-// function checkCompletion((course) => {
-
-// })
