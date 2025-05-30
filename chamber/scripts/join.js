@@ -2,21 +2,12 @@ const memberLevels = "https://BerryPatchWhimsy.github.io/wdd231/chamber/data/mem
 
 const memberCards = document.querySelector(".membershipCards");
 
-async function getLevelData() {
-    const response = await fetch(memberLevels);
-    const levelData = await response.json();
-    displayMemberLevels(levelData.levels);
-    
-}
-
-getLevelData();
-
 const displayMemberLevels = (levels) => {
     memberCards.innerHTML = "";
     levels.forEach((level) => {
         let levelCard = document.createElement("section");
         levelCard.classList.add = "levelCard";
-        
+
         let name = document.createElement("h2");
         name.textContent = level.levelType;
         levelCard.appendChild(name);
@@ -51,4 +42,31 @@ const displayMemberLevels = (levels) => {
 }
 
 
+async function getLevelData() {
+    const response = await fetch(memberLevels);
+    const levelData = await response.json();
+    displayMemberLevels(levelData.levels);
+    
+}
+
+getLevelData();
+
+const selectElement = document.querySelector("#memberChoice");
+const displaySelectElement = (levels) => {
+    
+    levels.forEach(level => {
+        const option = document.createElement("option");
+        option.textContent = level.levelType;
+
+        selectElement.appendChild(option);
+    });
+}
+
+async function  getSelectElementData () {
+    const response1 = await fetch(memberLevels);
+    const selectData = await response1.json();
+    displaySelectElement(selectData.levels);
+}
+
+getSelectElementData();
    

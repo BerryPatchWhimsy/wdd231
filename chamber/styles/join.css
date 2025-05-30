@@ -201,11 +201,17 @@ h2 {
 
 /*--------- form ---------*/
 form {
-    margin: 1rem auto;
+    margin: 1rem;
     border: 3px solid var(--primary-color);
     border-radius: 5px;
     padding: 10px;
+    background-color: var(--secondary-color);
 
+}
+
+.formTitle {
+    margin: 0;
+    
 }
 
 legend {
@@ -216,7 +222,7 @@ legend {
 
 fieldset {
     margin: 1rem 0;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 1rem;
 
@@ -258,7 +264,7 @@ form input[type="radio"] {
 
 form input[type="submit"] {
     border: none;
-    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    background-color: var(--background-color);
     color: white;
     border-radius: 3px;
     padding: .8rem;
@@ -292,7 +298,7 @@ form div {
 .membershipCards section {
     border: 1px solid var(--primary-color);
     border-radius: 3px;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     margin: 1rem;
     box-shadow: 0 0 10px var(--text-color);
     color: white;
@@ -301,10 +307,17 @@ form div {
 
 .membershipCards h2 {
     margin: 0;
+    background-color: var(--primary-color);
 }
 
 .membershipCards button {
     font-size: 5vw;
+    margin: 1rem .5rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 dialog[open] {
@@ -374,10 +387,15 @@ dialog h3 {
         grid-template-rows: 1fr;
     }
 
-
-
     /*-------------- body css --------------*/
+    .container{
+        display: flex;
 
+    }
+
+    main div {
+        
+    }
 }
 
 /* --------------------------------media large----------------------- */
