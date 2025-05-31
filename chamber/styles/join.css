@@ -36,6 +36,7 @@ footer {
 .container {
     display: flex;
     /* flex-wrap: wrap; */
+    
 }
 
 .container div {
@@ -108,7 +109,7 @@ footer {
 
 .navigation a:hover {
     color: var(--primary-color);
-    background-color: white;
+    background-color: var(--accent-color);
     text-decoration: underline;
     font-weight: bolder;
     border-radius: 3px;
@@ -143,18 +144,19 @@ footer {
 footer p {
     color: white;
     font-weight: bold;
+    font-size: 6.5vw;
 }
 
 .carlinCC {
     font-style: italic;
-    font-size: 3vw;
+    /* font-size: 4vw; */
 }
 
-.address,
+/* .address,
 .phone,
 .email {
-    font-size: 2vw;
-}
+    font-size: 4vw;
+} */
 
 .email a {
     color: white;
@@ -174,9 +176,9 @@ footer p {
     height: auto;
 }
 
-.copywrite {
+/* .copywrite {
     font-size: 2vw;
-}
+} */
 
 /*-------------- main body css --------------*/
 
@@ -201,11 +203,12 @@ h2 {
 
 /*--------- form ---------*/
 form {
-    margin: 1rem;
+    /* margin: 1rem; */
     border: 3px solid var(--primary-color);
     border-radius: 5px;
     padding: 10px;
     background-color: var(--secondary-color);
+    max-width: 90%;
 
 }
 
@@ -292,6 +295,7 @@ form div {
     margin: 1rem 0;
     text-align: center;
     border: none;
+    max-width: 90%;
 
 }
 
@@ -388,11 +392,7 @@ dialog h3 {
     }
 
     /*-------------- body css --------------*/
-    .container{
-        display: flex;
-
-    }
-
+    
     main div {
         
     }
@@ -422,6 +422,41 @@ dialog h3 {
         margin: 1rem;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    label, .email, .phone {
+        font-size: 1rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    form div {
+        font-size: 1rem;
+    }
+
+    .membershipCards {
+        flex-dir
+    }
+
+    .membershipCards button {
+        font-size: 1.5rem;
+    }
+
+    dialog h3 {
+        font-size: 1rem;
+    }
 
     footer {
         display: grid;
