@@ -7,4 +7,4 @@ button.addEventListener("click", () => {
     button.classList.toggle("open");
 });
 
-document.querySelector("#name").innerHTML = "Carlin City";
+document.querySelector("#name").innerHTML = "Carlin";
