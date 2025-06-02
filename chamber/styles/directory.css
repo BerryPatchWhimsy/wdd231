@@ -202,6 +202,14 @@ main {
 
 }
 
+main h1 {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+}
+
 h2 {
     color: white;
     background-color: var(--background-color);
@@ -327,6 +335,11 @@ section img {
 
     #animateMe {
         grid-template-rows: 1fr;
+    }
+
+    main h1 {
+        text-align: left;
+        padding-left: 1rem;
     }
 
     
