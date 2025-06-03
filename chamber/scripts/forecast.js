@@ -1,25 +1,42 @@
-const day1 = document.querySelector("#day1");
-const day2 = document.querySelector("#day2");
-const day3 = document.querySelector("#day3");
 
-const temp1 = document.querySelector("#temp1");
-const temp2 = document.querySelector("#temp2");
-const temp3 = document.querySelector("#temp3");
-
-const icon1 = document.querySelector("#icon1");
-const icon2 = document.querySelector("#icon2");
-const icon3 = document.querySelector("#icon3");
 
 const APIKey = "fef381b00dd5f7ee47bf318e599f2bac";
 const lat = 40.71;
 const lon = -116.10;
 const uni = "imperial";
 
+const currentURL = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}&units=${uni}`;
+
+async function currentAPIFetch() {
+    try {
+        const response = await fetch(currentURL);
+        if (response.ok) {
+            const currentData = await response.json();
+            displayCurrentWeather(currentData);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+currentAPIFetch();
+
+function displayCurrentWeather(data) {
+    const currentTemp = document.querySelector("#current-temp");
+    currentTemp.innerHTML = ` ${data.main.temp} &deg;F`;
+
+    const iconImg = document.querySelector("#weather-icon");
+    iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2.png`;
+    iconImg.setAttribute('src', iconSrc);
+    const description = data.weather[0].description;
+    iconImg.setAttribute('alt', description);
+}
+
+
 const forecastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=${uni}`;
 
-
-
-async function APIFetch() {
+async function forecastAPIFetch() {
     try {
         const response = await fetch(forecastURL);
         if (response.ok) {
@@ -34,7 +51,7 @@ async function APIFetch() {
         console.log(error);
     }
 }
-APIFetch();
+forecastAPIFetch();
 
 function displayResults(data) {
     data.list.forEach((day) => {
