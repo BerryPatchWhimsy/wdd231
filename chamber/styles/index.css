@@ -339,7 +339,7 @@ h2 {
 }
 
 .temp,
-figcaption {
+figcaption, #current-temp {
     font-size: 6.5vw;
     color: var(--text-color);
     margin: .5rem;
@@ -347,7 +347,22 @@ figcaption {
 #current-temp, .forecast p {
     font-family: var(--font-family);
     color: var(--text-color);
+}
 
+#town {
+    margin-top: 1rem;
+}
+
+#current-temp {
+    display: grid;
+    justify-content: center;
+}
+
+.daily {
+    display: grid;
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
 }
 
 /*-------------- spotlight css --------------*/
@@ -358,6 +373,7 @@ figcaption {
     grid-gap: .5rem;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
+    background-color: var(--secondary-color);
 }
 
 .business {
