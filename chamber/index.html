@@ -34,7 +34,7 @@
             <picture class="logo">
                 <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
                 <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
-                <img src="images/logo-pic.svg" alt="Carlin Chamber Logo" loading="lazy" width="100" height="100">
+                <img src="images/carlin-logo.webp" alt="Carlin Chamber Logo" loading="lazy" width="350" height="240">
             </picture>
             <div>
                 <span id="name"></span>
@@ -56,15 +56,17 @@
         </nav>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 320px)">
-                <source srcset="images/hero.webp" media="(max-width: 1200px)">
-                <img src="images/hero.webp" alt="Carlin Chamber of Commerce" width="1200" height="676">
+                <source srcset="images/carlin-gardens-small.webp" media="(max-width: 320px)">
+                <source srcset="images/carlin-gardens.webp" media="(max-width: 1200px)">
+                <img src="images/carlin-gardens.webp" alt="Carlin Chamber of Commerce" width="1200" height="800">
             </picture>
-            <div class="heroInfo">
-                <h2>Welcome to the Carlin Chamber of Commerce</h2>
-                <button id="join">Join Us!</button>
-                <p>Your gateway to local businesses and community events.</p>
-            </div>
+            <article class="heroInfo">
+                <div class="heroText">
+                    <h2>Welcome to the Carlin Chamber of Commerce</h2>
+                    <p>Your gateway to local businesses and community events.</p>
+                </div>  
+            </article>
+            <button id="join">Join Us!</button>
         </div>
         <div class="currentEvents">
             <h2>Upcoming Events</h2>
@@ -94,9 +96,9 @@
                 <h2>Current Weather</h2>
                 <h3 id="town">Carlin, Nevada</h3>
                 <p class="temp">The current temperature is: <span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon">
-                    <figcaption id="weather-description"></figcaption>
+                <figure id="currentIcon">
+                    <!-- <img id="weather-icon">. causes error
+                    <figcaption id="weather-description"></figcaption> -->
                 </figure>
             </div>
             <div class="forecast">
