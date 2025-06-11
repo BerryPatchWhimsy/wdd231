@@ -131,7 +131,7 @@ footer {
 .active::before {
     content: " › Discover";
     text-decoration: underline;
-    
+
 }
 
 /*--------- Basics for footer ---------*/
@@ -143,7 +143,7 @@ footer {
 footer p {
     color: white;
     font-weight: bold;
-    
+
 }
 
 .carlinCC {
@@ -183,6 +183,7 @@ footer p {
 
 main {
     background-color: white;
+    
 
 }
 
@@ -193,6 +194,57 @@ h2 {
     font-size: 5vw;
 }
 
+/*-------------- item of interest cards --------------*/
+.itemCards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px var(--primary-color);
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    ".title"
+    ".itemFig"
+    ".itemAdd"
+    ".itemDescrip"
+    ".itemButton";
+    
+}
+
+section p {
+    font-size: 4vw;
+    padding-top: .5rem;
+}
+
+section a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+section figure {
+    justify-self: center;
+    width: 300px;
+    height: 200px;
+}
+
+section img {
+    width: auto;
+    height: 100%;
+    
+}
 /* --------------------------------media medium--------------------- */
 @media screen and (min-width: 320px) {
     body {
@@ -231,10 +283,19 @@ h2 {
         grid-template-rows: 1fr;
     }
 
-   
+
 
 
     /*-------------- body css --------------*/
+    .itemCards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1fr 1fr;
+        grid-template-areas: 
+        "h2 ."
+        "figure address"
+        "p p"
+        "button button";
+    }
 
 }
 

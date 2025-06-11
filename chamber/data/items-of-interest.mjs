@@ -1,5 +1,5 @@
-{
-    "items": [
+
+export const items = [
         {
             "name": "Carlin Canyon",
             "address": "Nevada State Historical Marker #50",
@@ -73,4 +73,3 @@
             "webpage": "https://carlin.ecsdnv.net/"
         }
     ]
-}

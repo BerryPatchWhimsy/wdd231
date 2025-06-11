@@ -1,20 +1,16 @@
-const itemsOfInterest = "https://BerryPatchWhimsy.github.io/wdd231/chamber/data/items-of-interest.json";
+// const itemsOfInterest = "https://BerryPatchWhimsy.github.io/wdd231/chamber/data/items-of-interest.json";
+import { items } from "../data/items-of-interest.mjs"
+
+// console.log(items);
 
 const itemCards = document.querySelector(".itemCards");
-
-async function getItemInterestData() {
-    const itemsResponse = await fetch(itemsOfInterest);
-    const itemsData = await itemsResponse.json();
-    displayItems(itemsData.items);
-}
-
-getItemInterestData();
 
 const displayItems = (items) => {
     items.forEach((item) => {
         let itemCard = document.createElement("section");
 
         let itemTitle = document.createElement("h2");
+        itemTitle.classList.add = "title";
         itemTitle.textContent = item.name;
         itemCard.appendChild(itemTitle);
 
@@ -22,7 +18,7 @@ const displayItems = (items) => {
         itemFigure.classList.add = "itemFig";
         itemFigure.setAttribute("width", "300px");
         itemFigure.setAttribute("width", "200px");
-        
+
         let itemImg = document.createElement("img");
         itemImg.src = item.photoURL;
         itemImg.alt = item.name;
@@ -33,30 +29,39 @@ const displayItems = (items) => {
         itemCard.appendChild(itemFigure);
 
         let itemAddress = document.createElement("address");
+        itemAddress.classList.add = "itemAdd";
         let address = item.address;
-        itemAddress.appendChild(address);
         let email = item.email;
         let phone = item.phone;
         let website = item.webpage;
 
         itemAddress.innerHTML = `
+            <p>Contact At:</p>
             <p>${address}</p>
-            <p>${phone}</p>
+            <a href="tel:${phone}">${phone}</a>
             <a href="mailto:${email}">${email}</a>
-            <a href="mailto:${website}">${website}</a>
         `
-        
+
         itemCard.appendChild(itemAddress);
 
         let itemDescription = document.createElement("p");
+        itemDescription.classList.add = "itemDescrip";
         itemDescription.textContent = item.description;
         itemCard.appendChild(itemDescription);
 
         let itemButton = document.createElement("button");
         itemButton.classList.add = "itemButton";
         itemButton.textContent = "Learn more";
-        itemButton.setAttribute("href", `${ website }`);
+        
+        itemButton.addEventListener("click", () => {
+            window.location.href = website;
+        });
+        
         itemCard.appendChild(itemButton);
+
+        itemCards.appendChild(itemCard);
 
     })
 }
+
+displayItems(items);
