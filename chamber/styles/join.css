@@ -55,6 +55,8 @@ footer {
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
+    background-color: white;
+    align-content: center;
 }
 
 .logo img {
@@ -373,6 +375,11 @@ dialog h3 {
         align-items: center;
     }
 
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
     #menu {
         display: none;
     }
@@ -446,9 +453,9 @@ dialog h3 {
         font-size: 1rem;
     }
 
-    .membershipCards {
+    /* .membershipCards {
         flex-dir
-    }
+    } */
 
     .membershipCards button {
         font-size: 1.5rem;

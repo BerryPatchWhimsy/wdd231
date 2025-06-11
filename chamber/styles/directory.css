@@ -54,7 +54,10 @@ footer {
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
+    background-color: white;
+    align-content: center;
 }
+
 .logo img {
     max-width: 100%;
     height: auto;
@@ -317,6 +320,11 @@ section img {
 
     header {
         align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
     }
 
     #menu {
