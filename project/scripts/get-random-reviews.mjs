@@ -25,4 +25,3 @@ randomReviews.forEach(review => {
 
 
 
-// console.log(randomReviews); 

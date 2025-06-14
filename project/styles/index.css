@@ -114,7 +114,7 @@ footer {
     text-align: center;
     transition: .5s;
     font-size: 7vw;
-    background-color: none;
+    
 }
 
 .navigation a:hover,
@@ -541,7 +541,7 @@ main {
     .hero {
         width: 100%;
         height: auto;
-        padding: 0 auto;
+        padding: 0;
         margin: 1rem auto 0 auto;
     }
 
