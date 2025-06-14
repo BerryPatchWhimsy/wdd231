@@ -9,7 +9,7 @@ const uni = "imperial";
 const currentURL = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}&units=${uni}`;
 
 async function currentAPIFetch() {
-    try {
+    // try {
         const response = await fetch(currentURL);
         if (response.ok) {
             const currentData = await response.json();
@@ -17,9 +17,9 @@ async function currentAPIFetch() {
         } else {
             throw Error(await response.text());
         }
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 }
 currentAPIFetch();
 
@@ -38,7 +38,7 @@ function displayCurrentWeather(data) {
 const forecastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=${uni}`;
 
 async function forecastAPIFetch() {
-    try {
+    // try {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
@@ -48,9 +48,9 @@ async function forecastAPIFetch() {
         } else {
             throw Error(await response.text());
         }
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 }
 forecastAPIFetch();
 
