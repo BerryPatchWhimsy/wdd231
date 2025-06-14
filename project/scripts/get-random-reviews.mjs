@@ -1,4 +1,4 @@
-import { reviews } from "../data/customer-comments.mjs";
+import { reviews } from "./customer-comments.mjs";
 
 function getRandomReviews(reviews, num = 2) {
     return reviews
