@@ -1,7 +1,7 @@
 :root {
-    /* --primary-color: rgb(35, 61, 77); */
+    --primary-color: rgb(35, 61, 77);
     --secondary-color: rgb(161, 193, 129);
-    --primary-color: rgb(73, 144, 103);
+    --background-color: rgb(54, 109, 77);
     --accent-color: rgb(252, 202, 70);
 
     --text-color: black;
@@ -10,62 +10,161 @@
     --heading-font-family: "Original Surfer", sans serif;
 }
 
-.primaryColor {
-    color: var(--primary-color);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.secondaryColor {
-    color: var(--secondary-color);
-}
-
-.accentColor {
-    color: var(--accent-color);
-}
-
-.textColor {
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--body-font-family);
+    max-width: 320px;
     color: var(--text-color);
 }
 
-.headings {
+h1,
+h2,
+h3 {
     font-family: var(--heading-font-family);
+    color: var(--text-color);
 }
 
-.body {
-    font-family: var(--body-font-family);
+/*---- Basic CSS for the header and footer ----*/
+
+header,
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: .5rem;
 }
 
-header, footer {
-    background-color: var(--primary-color);
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.container div {
+    padding-top: .5rem;
+}
+
+.container p {
+    font-size: 6.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#name {
+    font-size: 8vw;
+    font-family: var(--heading-font-family);
+    color: white;
+}
+
+#menu {
+    font-size: 8vw;
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+    content: "ⓧ";
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--secondary-color);
 
 }
+
+.navigation a {
+    display: block;
+    color: var(--text-color);
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+    font-size: 7vw;
+    background-color: none;
+}
+
+.navigation a:hover {
+    color: var(--primary-color);
+    /* background-color: white; */
+    text-decoration: underline;
+    font-weight: bolder;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+
+
+}
+
+#animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+#animateMe.open {
+    grid-template-rows: 1fr;
+}
+
+.active::before {
+    content: "☀️Home";
+    text-decoration: none;
+
+}
+
+/*--------- Basics for footer ---------*/
 
 footer {
     border-radius: 5px 5px 0 0;
-    display: flex;
-    flex-direction: row;
 }
 
 footer p {
-    
+    color: white;
     font-weight: bold;
-    font-size: 1rem;
-    margin: 0 1rem;
-
+    font-size: 6vw;
 }
 
 .leafyTreetopsLLC {
-    font-style: italic;
-    /* font-size: 4vw; */
+    font-size: 7vw;
 }
 
-/* .address,
-.phone,
-.email {
-    font-size: 4vw;
-} */
-
 .email a {
-    color: var(--text-color);
+    color: white;
     text-decoration: underline;
 }
 
@@ -74,26 +173,490 @@ footer p {
     flex-wrap: wrap;
     flex-direction: row;
     margin: .5rem;
-    
+    justify-content: space-evenly;
 }
 
 .socialLinks a img {
     max-width: 30px;
     height: auto;
-    margin-right: 1rem;
 }
 
-h1, h2 {
-    font-family: var(--heading-font-family);
-    
+/*--------- body ---------*/
+.customerReviews,
+.weather,
+.deals {
+    margin: 1rem;
 }
 
-h2 {
+h1 {
+    padding-bottom: .25rem;
+    padding-left: .5rem;
+    text-align: center;
     background-color: var(--secondary-color);
 }
 
-body {
-    font-family: var(--body-font-family);
+/*--------- hero ---------*/
+main {
+    background-color: white;
+}
+
+.hero {
+    position: relative;
+    background-color: white;
+    padding: .5rem;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    height: auto;
+}
+
+.hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px var(--primary-color);
+    border-radius: 5px;
+}
+
+.heroInfo {
+    position: absolute;
+    margin: .5rem;
+    top: 40vw;
+    left: 0;
+    height: auto;
+    background-color: var(--secondary-color);
+    opacity: .85;
+}
+
+.heroText h2 {
+    background-color: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 7vw;
+}
+
+.heroInfo p {
+    display: none;
+}
+
+.heroText {
+    margin: .5rem;
+    position: relative;
+}
+
+#reserve {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: .25rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#reserve:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/*--------- reviews and deals ---------*/
+
+.customerReviews,
+.deals {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 0;
+    margin: 1rem;
+
+}
+
+.customerReviews h2,
+.deals h2 {
+    font-size: 7vw;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: .5rem;
+    color: white;
+}
+
+#reviews,
+.dealsInfo {
+    margin: .5rem;
+}
+
+.review-card,
+.currentDealCard,
+.upcomingDealCard {
+    font-size: 6vw;
+    padding: .5rem;
+}
+
+.currentDealHeader,
+.upcomingDealHeader {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/*--------- weather ---------*/
+.weather {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: .5rem;
+    text-align: center;
+}
+
+.weather h2 {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 7vw;
+}
+
+.current,
+#town,
+.days {
+    font-size: 6vw;
+}
+
+.current,
+.days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.forecast {
+    margin-top: 1rem;
+}
+
+.daily,
+.current {
+    box-shadow: 0 1px 2px var(--primary-color);
+    border-radius: 5px;
+    margin: .5rem;
+    padding: 1rem;
+
 }
 
 
+/* --------------------------------media medium--------------------- */
+@media screen and (min-width: 320px) {
+    body {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    .navigation a {
+        font-weight: bolder;
+
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
+    .active::before {
+        content: "Home☀️";
+    }
+
+    #reserve {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /*-------------- body css --------------*/
+    h1 {
+        
+        padding-left: 1rem;
+        font-size: 8vw;
+    }
+
+    .hero h1 {
+        font-size: 6.5vw;
+        text-align: center;
+    }
+
+
+
+    footer p {
+        font-size: 4vw;
+    }
+
+}
+
+/* --------------------------------media large----------------------- */
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .container p {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-top: .25rem;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .navigation a {
+        font-size: 2.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+        footer {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr auto 1fr;
+            padding: 1rem;
+        }
+    
+        footer p {
+            font-size: 1.5rem;
+        }
+    
+        .leafyTreetopsLLC {
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+    
+        .copywrite,
+        .info {
+            text-align: center;
+        }
+    
+    
+        .social {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            margin: 0 auto;
+        }
+    
+        .socialLinks {
+            display: block;
+            justify-content: space-evenly;
+        }
+    
+        .socialLinks a img {
+            max-width: 50px;
+            height: auto;
+            margin: .5rem;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+}
+
+/* --------------------------------media x-large----------------------- */
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation a {
+        font-size: 2.25rem;
+        margin: 1rem;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+        padding: 0 auto;
+        margin: 1rem auto 0 auto;
+    }
+
+    .heroText {
+        padding: 1rem;
+    }
+
+    .heroText p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        font-style: italic;
+        justify-content: right;
+        text-align: right;
+        padding-left: 4rem;
+        margin-top: 1rem;
+    }
+
+    .heroText h2 {
+        font-size: 3.5rem;
+        font-weight: normal;
+
+    }
+
+    #reserve {
+        position: relative;
+        bottom: 60vw;
+        left: 72vw;
+        font-size: 2rem;
+        padding: 1rem;
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+
+    }
+
+    #reserve:hover {
+        background-color: var(--secondary-color);
+        text-decoration: underline;
+    }
+
+    .hero img {
+        max-width: 100%;
+        background-color: white;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .customerReviews h2,
+    .deals h2 {
+        font-size: 2rem;
+    }
+
+    #reviews,
+    .dealsInfo {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    .review-card,
+    .currentDealCard,
+    .upcomingDealCard {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    .weather {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .weather h2 {
+        font-size: 2rem;
+    }
+
+    .current,
+    #town,
+    .days {
+        font-size: 1.25rem;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .forecast {
+        margin: 0 0 0 1rem;
+    }
+
+    .daily,
+    .current {
+        box-shadow: 0 1px 2px var(--primary-color);
+        border-radius: 5px;
+        margin: .5rem;
+        padding: 1rem;
+
+    }
+
+    
+
+}
