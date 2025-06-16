@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(35, 61, 77);
     --secondary-color: rgb(161, 193, 129);
-    --background-color: rgb(54, 109, 77);
+    --background-color: rgb(49, 94, 67);
     --accent-color: rgb(252, 202, 70);
 
     --text-color: black;
@@ -148,6 +148,11 @@ footer {
     font-weight: bold;
 }
 
+.info, .social, .copywrite {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
 .leafyTreetopsLLC {
     font-size: 7vw;
 }
@@ -214,7 +219,7 @@ main {
     left: -10px;
     height: auto;
     background-color: var(--secondary-color);
-    opacity: .85;
+    /* opacity: .85; */
     
 }
 
