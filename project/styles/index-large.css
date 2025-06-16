@@ -45,6 +45,11 @@
 
     }
 
+    .heroText {
+        flex-wrap: wrap;
+        
+    }
+
     footer {
         display: grid;
         grid-template-rows: 1fr;

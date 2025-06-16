@@ -190,17 +190,14 @@ main {
 }
 
 .hero {
-    /* position: relative; */
     background-color: white;
     padding: .5rem;
     border-radius: 0 0 5px 5px;
-    width: 100%;
-    height: auto;
+    
 }
 
 .hero img {
-    display: block;
-    position: relative;
+    
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -208,14 +205,17 @@ main {
     border-radius: 5px;
 }
 
-.heroInfo {
-    position: absolute;
+
+
+.heroText {
+    position: relative;
     margin: .5rem;
-    top: 40vw;
-    left: 0;
+    top: -30vw;
+    left: -10px;
     height: auto;
     background-color: var(--secondary-color);
     opacity: .85;
+    
 }
 
 .heroText h2 {
@@ -224,20 +224,17 @@ main {
     font-size: 7vw;
 }
 
-.heroInfo p {
+.heroText p {
     display: none;
 }
 
-.heroText {
-    margin: .5rem;
-    position: relative;
-}
+
 
 #reserve {
     display: block;
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
+    position: relative;
+    top: -5vw;
+    left: 50vw;
     background-color: var(--primary-color);
     color: var(--accent-color);
     font-size: 4.5vw;
@@ -246,6 +243,7 @@ main {
     padding: .25rem;
     border-radius: 5px;
     text-decoration: none;
+    
 }
 
 

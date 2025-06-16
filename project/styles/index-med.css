@@ -45,10 +45,7 @@
         content: "Home☀️";
     }
 
-    #reserve {
-        bottom: 20px;
-        right: 20px;
-    }
+    
 
     /*-------------- body css --------------*/
     h1 {
@@ -60,6 +57,17 @@
     .hero h1 {
         font-size: 6.5vw;
         text-align: center;
+    }
+
+    .heroText {
+        display: flex;
+        padding: .25rem;
+    }
+
+    #reserve {
+        position: static;
+        margin: 2rem 0;
+        
     }
 
 }
