@@ -185,72 +185,6 @@ footer {
 }
 
 /*--------- body ---------*/
-.rentalsContainer {
-    margin: 1rem 0;
-    text-align: center;
-    border: none;
-    max-width: 90%;
-
-}
-
-.treehouse-card {
-    border: 1px solid var(--primary-color);
-    border-radius: 3px;
-    background-color: var(--primary-color);
-    margin: 1rem;
-    box-shadow: 0 0 10px var(--text-color);
-    color: white;
-    align-items: center;
-}
-
-.treehouse-card h2 {
-    margin: 0;
-    background-color: var(--primary-color);
-}
-
-.treehouse-card button {
-    font-size: 5vw;
-    margin: 1rem .5rem;
-    background-color: var(--primary-color);
-    border: none;
-    color: white;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-dialog[open] {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid var(--primary-color);
-    justify-self: center;
-    max-width: 60%;
-}
-
-dialog h3 {
-    background-color: var(--background-color);
-    color: white;
-    padding: .5rem;
-    font-size: 4vw;
-}
-
-.treehouse-dialog p {
-    color: var(--text-color);
-    text-align: left;
-    padding: 1rem;
-    justify-self: left;
-}
-
-&::backdrop {
-    background-color: black 1;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: none;
-    border: none;
-}
 
 
 /* --------------------------------media medium---------------------------------------------- */
@@ -392,20 +326,21 @@ dialog h3 {
         margin: .5rem;
     }
 
-    
+
 
 
 }
+
 /* --------------------------------media x-large----------------------- */
 @media screen and (min-width: 900px) {
     h1 {
         font-size: 2rem;
     }
 
-    
 
-    
 
-    
+
+
+
 
 }
