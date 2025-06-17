@@ -14,6 +14,13 @@ button.addEventListener("click", () => {
     button.classList.toggle("open");
 });
 
+
+const reserveButton = document.querySelector("#reserve");
+
+reserveButton.addEventListener("click",  () => {
+    window.location.href = "https://berrypatchwhimsy.github.io/wdd231/project/contact-us.html";
+})
+
 const dealsContainer = document.querySelector(".dealsInfo");
 
 createCurrentSpecialCard();

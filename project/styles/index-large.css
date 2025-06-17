@@ -47,7 +47,7 @@
 
     .heroText {
         flex-wrap: wrap;
-        
+
     }
 
     footer {
@@ -68,7 +68,6 @@
         text-align: center;
     }
 
-
     .social {
         display: grid;
         grid-template-columns: 1fr;
@@ -79,19 +78,13 @@
 
     .socialLinks {
         display: block;
-        justify-content: space-evenly;
+        
     }
 
     .socialLinks a img {
         max-width: 50px;
-        height: auto;
+        
         margin: .5rem;
     }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
 
 }
