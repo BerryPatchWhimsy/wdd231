@@ -20,7 +20,6 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
-
 }
 
 h1,
@@ -112,7 +111,8 @@ footer {
 }
 
 .navigation a:hover,
-#reserve:hover {
+#reserve:hover,
+.treehouseInfo:hover {
     color: var(--primary-color);
     text-decoration: underline;
     font-weight: bolder;
@@ -185,24 +185,34 @@ footer {
 }
 
 /*--------- body ---------*/
-.rentalsContainer {
+#rentalsContainer {
     margin: 1rem 0;
     text-align: center;
     border: none;
     max-width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
 
 }
 
-.treehouse-card {
+.treehouse-card,
+.grid div,
+.list div {
     border: 2px solid var(--background-color);
     border-radius: 3px;
-    
     margin: 1rem;
     box-shadow: 0 0 2px var(--text-color);
     color: var(--text-color);
     align-items: center;
+
+}
+
+.treehouse-card img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 5px; */
 }
 
 .treehouse-card li {
@@ -213,6 +223,13 @@ footer {
 .treehouse-card h2 {
     margin: 0;
     background-color: var(--secondary-color);
+
+}
+
+
+.availability {
+    color: red;
+    font-weight: bold;
 }
 
 .treehouse-card button {
@@ -221,7 +238,7 @@ footer {
     background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
-    color:var(--accent-color);
+    color: var(--accent-color);
     font-style: italic;
     text-decoration: underline;
     box-shadow: 0 0 5px var(--background-color);
@@ -233,19 +250,31 @@ dialog[open] {
     border: 1px solid var(--primary-color);
     justify-self: center;
     max-width: 60%;
+    top: 300px;
 }
 
 dialog h3 {
+    position: relative;
     background-color: var(--background-color);
     color: white;
     padding: .5rem;
+    margin-top: .07rem;
+
     font-size: 4vw;
 }
 
-.treehouse-dialog p {
+dialog ul {
+    padding-left: 1rem;
+}
+
+.treehouse-dialog a {
+    margin: 1rem;
+}
+
+.treehouse-dialog li {
     color: var(--text-color);
     text-align: left;
-    padding: 1rem;
+    padding: 1rem .5rem 0;
     justify-self: left;
 }
 
@@ -255,10 +284,57 @@ dialog h3 {
 
 .close-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 1px;
+    right: 1px;
     background: none;
     border: none;
+}
+
+.cardMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#grid,
+#list {
+    margin: .75rem;
+}
+
+.list {
+    justify-items: center;
+    align-items: center;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
+
+.list div>* {
+    font-size: 5vw;
+}
+
+.list div h2 {
+    font-size: 6vw;
+    margin: 0;
+    padding: 1.25rem 0;
+
+}
+
+.list div ul {
+    padding: .25rem;
+}
+
+.list div img {
+    display: none;
+}
+
+.list div:nth-child(even) {
+    background-color: var(--background-color);
 }
 
 
@@ -370,7 +446,7 @@ dialog h3 {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr auto 1fr;
         padding: 1rem;
-        font-size: 1.5rem;
+
     }
 
     .leafyTreetopsLLC {
@@ -381,7 +457,16 @@ dialog h3 {
     .copywrite,
     .info {
         text-align: center;
+        font-size: 2vw;
+        font-weight: normal;
     }
+
+    /* div.copywrite,
+    div.info {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: normal;
+    } */
 
 
     .social {
@@ -401,20 +486,41 @@ dialog h3 {
         margin: .5rem;
     }
 
-    
+    /*-------------- body css --------------*/
 
+    .grid div {
+        max-width: 250px;
+
+    }
+
+    .list div h2 {
+        font-size: 3vw;
+    }
+
+    .list div li {
+        font-size: 2.5vw;
+    }
+
+    .treehouse-card button {
+        width: 120px;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 
 }
+
 /* --------------------------------media x-large----------------------- */
 @media screen and (min-width: 900px) {
     h1 {
         font-size: 2rem;
     }
 
-    
 
-    
 
-    
+
+
+
+
+
 
 }

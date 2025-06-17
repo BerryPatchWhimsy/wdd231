@@ -8,7 +8,7 @@ updateLastModified();
 
 const button = document.querySelector("#menu");
 const navigation = document.querySelector("#animateMe");
-const container = document.querySelector(".rentalsContainer");
+const container = document.querySelector("#rentalsContainer");
 
 button.addEventListener("click", () => {
     navigation.classList.toggle("open");
@@ -50,25 +50,46 @@ function showlist() {
 }
 
 
+
+
 const displayTreehouses = (treehouses) => {
 
     treehouses.forEach(treehouse => {
+
         const card = document.createElement("div");
         card.className = "treehouse-card";
+
+        const getAvailability = () => {
+            const availability = treehouse.availability;
+            if (availability == true) {
+                return `Available`;
+            } else {
+                return `Currently Unavailable.`;
+            };
+        };
+
+        let available = document.createElement("li");
+        available.classList.add("availability");
+        available.textContent = getAvailability();
+
+
         card.innerHTML = `
         <img src="${treehouse.imageURL}" alt="${treehouse.name}" loading="lazy" width="400" height="300">
         <h2>${treehouse.name}</h2>
         <ul>
           <li><strong>Price:</strong> $${treehouse.price} / night</li>
           <li><strong>Beds:</strong> ${treehouse.numberOfBeds}</li>
+          <li><strong>Availability:</strong> ${available.textContent}</li>
         </ul>
       `;
+
 
 
         let info = document.createElement("button");
         info.classList.add("treehouseInfo");
         info.textContent = "Learn more";
         card.appendChild(info);
+
 
         container.appendChild(card);
 
