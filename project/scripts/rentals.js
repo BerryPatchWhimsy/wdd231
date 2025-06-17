@@ -42,7 +42,7 @@ gridbutton.addEventListener("click", () => {
 }
 );
 
-listbutton.addEventListener("click", showlist); 
+listbutton.addEventListener("click", showlist);
 
 function showlist() {
     container.classList.add("list");
@@ -51,19 +51,19 @@ function showlist() {
 
 
 const displayTreehouses = (treehouses) => {
-    
+
     treehouses.forEach(treehouse => {
         const card = document.createElement("div");
         card.className = "treehouse-card";
         card.innerHTML = `
-        <img src="${treehouse.imageURL}" alt="${treehouse.name}">
+        <img src="${treehouse.imageURL}" alt="${treehouse.name}" loading="lazy" width="400" height="300">
         <h2>${treehouse.name}</h2>
         <ul>
           <li><strong>Price:</strong> $${treehouse.price} / night</li>
           <li><strong>Beds:</strong> ${treehouse.numberOfBeds}</li>
         </ul>
       `;
-        
+
 
         let info = document.createElement("button");
         info.classList.add("treehouseInfo");
@@ -98,4 +98,4 @@ const displayTreehouses = (treehouses) => {
             dialog.close();
         });
     });
-  }
+}
