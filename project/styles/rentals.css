@@ -190,22 +190,29 @@ footer {
     text-align: center;
     border: none;
     max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .treehouse-card {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--background-color);
     border-radius: 3px;
-    background-color: var(--primary-color);
+    
     margin: 1rem;
-    box-shadow: 0 0 10px var(--text-color);
-    color: white;
+    box-shadow: 0 0 2px var(--text-color);
+    color: var(--text-color);
     align-items: center;
+}
+
+.treehouse-card li {
+    list-style: none;
+    text-align: left;
 }
 
 .treehouse-card h2 {
     margin: 0;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .treehouse-card button {
@@ -213,9 +220,11 @@ footer {
     margin: 1rem .5rem;
     background-color: var(--primary-color);
     border: none;
-    color: white;
+    border-radius: 5px;
+    color:var(--accent-color);
     font-style: italic;
     text-decoration: underline;
+    box-shadow: 0 0 5px var(--background-color);
 }
 
 dialog[open] {

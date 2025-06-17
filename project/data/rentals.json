@@ -5,8 +5,8 @@
             "squareFootage": 750,
             "numberOfBeds": 2,
             "price": 450,
-            "imageURL": "https://example.com/images/whispering-pines.jpg",
-            "imageArtistInfo": "https://unsplash.com/@forestwanderer",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/whispering-pines.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/brown-wooden-treehouse-2380249/",
             "description": "Nestled among towering pines, this elevated sanctuary features panoramic forest views, a private hot tub, and artisan-crafted interiors that blend luxury and nature seamlessly."
         },
         {
@@ -14,8 +14,8 @@
             "squareFootage": 1100,
             "numberOfBeds": 3,
             "price": 680,
-            "imageURL": "https://example.com/images/canopy-sky.jpg",
-            "imageArtistInfo": "https://unsplash.com/@aerialtreehomes",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/canopy-sky-retreat.webp",
+            "imageArtistInfo": "stockcake",
             "description": "Perched high above a lush rainforest canopy, this spacious modern treehouse offers an open-air deck, glass walls, and eco-luxury amenities designed for serene escape."
         },
         {
@@ -23,8 +23,8 @@
             "squareFootage": 900,
             "numberOfBeds": 2,
             "price": 520,
-            "imageURL": "https://example.com/images/eagles-nest.jpg",
-            "imageArtistInfo": "https://unsplash.com/@treehouseartist",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/eagles-nest-luxe-lodge.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/two-people-standing-on-brown-wooden-treehouse-4840135/",
             "description": "A stunning cliffside retreat with sweeping mountain views, hand-carved cedar features, and a wraparound terrace designed for sunrise yoga or stargazing evenings."
         },
         {
@@ -32,8 +32,8 @@
             "squareFootage": 400,
             "numberOfBeds": 1,
             "price": 310,
-            "imageURL": "https://example.com/images/starlight-nook.jpg",
-            "imageArtistInfo": "https://unsplash.com/@tinyhomeviews",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/starlight-nook.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/charming-wooden-treehouse-in-autumn-forest-30977255/",
             "description": "This intimate treetop escape is perfect for couples, featuring a stargazing skylight above the bed, ambient lighting, and a fire pit on the deck."
         },
         {
@@ -41,8 +41,8 @@
             "squareFootage": 550,
             "numberOfBeds": 1,
             "price": 335,
-            "imageURL": "https://example.com/images/bluebird-bungalow.jpg",
-            "imageArtistInfo": "https://unsplash.com/@woodnest",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/bluebird-bungalow.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/brown-house-1795508/",
             "description": "A Scandinavian-inspired modern treehouse perched in the hills, complete with heated floors, minimalist décor, and stunning morning light."
         },
         {
@@ -50,8 +50,8 @@
             "squareFootage": 300,
             "numberOfBeds": 1,
             "price": 280,
-            "imageURL": "https://example.com/images/silver-creek.jpg",
-            "imageArtistInfo": "https://unsplash.com/@treeescape",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/nest-sliver-creek.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/wooden-cottage-in-forest-18168868/",
             "description": "Tucked in a secluded grove, this cozy nest features a queen bed loft, wood-fired stove, and forest canopy hammock views."
         },
         {
@@ -59,8 +59,8 @@
             "squareFootage": 600,
             "numberOfBeds": 2,
             "price": 390,
-            "imageURL": "https://example.com/images/timberglow-loft.jpg",
-            "imageArtistInfo": "https://unsplash.com/@cabinlife",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/timberGlow-loft.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/house-under-trees-18323761/",
             "description": "A rustic-luxury loft with vaulted ceilings, floor-to-ceiling windows, and a glass-enclosed rainfall shower suspended in the treetops."
         },
         {
@@ -68,8 +68,8 @@
             "squareFootage": 450,
             "numberOfBeds": 1,
             "price": 295,
-            "imageURL": "https://example.com/images/hummingbird-haven.jpg",
-            "imageArtistInfo": "https://unsplash.com/@naturegetaways",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/hummingbird-bird-haven.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/tree-house-3018035/",
             "description": "Surrounded by flowering trees and birdsong, this light-filled retreat offers a swinging daybed, bamboo accents, and a forest spa tub."
         },
         {
@@ -77,8 +77,8 @@
             "squareFootage": 800,
             "numberOfBeds": 2,
             "price": 465,
-            "imageURL": "https://example.com/images/aurora-branch.jpg",
-            "imageArtistInfo": "https://unsplash.com/@northernnests",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/aurora-branch-house.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/aerial-adventure-park-in-forest-in-snow-19296596/",
             "description": "Perfect for northern lights viewing, this Arctic-inspired treehouse boasts heated glass panels, Nordic furnishings, and a wood sauna."
         },
         {
@@ -86,8 +86,8 @@
             "squareFootage": 520,
             "numberOfBeds": 2,
             "price": 350,
-            "imageURL": "https://example.com/images/willow-lantern.jpg",
-            "imageArtistInfo": "https://unsplash.com/@treehouzestudio",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/willow-lantern-hideout.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/wooden-house-with-glass-panels-with-wooden-staircase-under-a-green-tree-8755443/",
             "description": "An enchanting escape illuminated by lantern light, this cozy perch features handcrafted willow furniture and a spiral staircase."
         },
         {
@@ -95,8 +95,8 @@
             "squareFootage": 375,
             "numberOfBeds": 1,
             "price": 305,
-            "imageURL": "https://example.com/images/foxglove-perch.jpg",
-            "imageArtistInfo": "https://unsplash.com/@ecoescape",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/foxglove-perch.webp",
+            "imageArtistInfo": "Reidner",
             "description": "Hidden among blooming foxglove and mossy trunks, this snug cabin includes a stone fireplace, built-in bookshelves, and a skylight above the bath."
         },
         {
@@ -104,8 +104,8 @@
             "squareFootage": 480,
             "numberOfBeds": 1,
             "price": 325,
-            "imageURL": "https://example.com/images/lantern-lookout.jpg",
-            "imageArtistInfo": "https://unsplash.com/@luxcabinretreats",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/lantern-lookout.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/small-tree-house-with-narrow-footpath-in-forest-6272212/",
             "description": "Overlooking a peaceful lake, this compact luxury rental includes a full kitchenette, outdoor fire bowl, and swinging rope bridge access."
         },
         {
@@ -113,8 +113,8 @@
             "squareFootage": 620,
             "numberOfBeds": 2,
             "price": 400,
-            "imageURL": "https://example.com/images/cedar-spiral.jpg",
-            "imageArtistInfo": "https://unsplash.com/@spiralforest",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/cedar-spiral-cabin.webp",
+            "imageArtistInfo": "https://www.pexels.com/photo/1668880/",
             "description": "This artistic treehouse features a cedar spiral staircase, rain-harvest shower, and a wraparound porch with sunset views."
         },
         {
@@ -122,8 +122,8 @@
             "squareFootage": 360,
             "numberOfBeds": 1,
             "price": 290,
-            "imageURL": "https://example.com/images/luna-loft.jpg",
-            "imageArtistInfo": "https://unsplash.com/@tinyforesthomes",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/luna-loft.webp",
+            "imageArtistInfo": "stockcake",
             "description": "Designed for solo travelers or couples, Luna Loft offers a moonlit deck, indoor hammock nook, and built-in aromatherapy diffuser."
         },
         {
@@ -131,8 +131,8 @@
             "squareFootage": 580,
             "numberOfBeds": 2,
             "price": 370,
-            "imageURL": "https://example.com/images/driftwood-roost.jpg",
-            "imageArtistInfo": "https://unsplash.com/@coastalcabins",
+            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/driftwood-roost.webp",
+            "imageArtistInfo": "d_alexander33",
             "description": "Blending coastal charm with treetop serenity, this hideaway features salvaged driftwood décor, ocean breezes, and a wine bar nook."
         }
     ]

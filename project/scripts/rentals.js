@@ -1,3 +1,5 @@
+import { updateCurrentYear, updateLastModified } from "./getdate.mjs";
+
 
 document.querySelector("#name").innerHTML = "Leafy Treetops";
 
@@ -6,21 +8,22 @@ updateLastModified();
 
 const button = document.querySelector("#menu");
 const navigation = document.querySelector("#animateMe");
+const container = document.querySelector(".rentalsContainer");
 
 button.addEventListener("click", () => {
     navigation.classList.toggle("open");
     button.classList.toggle("open");
 });
 
-const treehouses = "https://BerryPatchWhimsy.github.io/wdd231/project/data/rentals.json";
+const treehousesList = "https://BerryPatchWhimsy.github.io/wdd231/project/data/rentals.json";
 async function getTreehouseData() {
     try {
-        const response = await fetch(treehouses);
+        const response = await fetch(treehousesList);
         if (!response.ok) {
             throw new Error(`Fetch error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
-        displayTreehouses(data); // Adjust this function as needed for your data structure
+        displayTreehouses(data.rentals); // Adjust this function as needed for your data structure
     } catch (error) {
         console.error("Error loading treehouse data:", error);
         // Optional: display a message in the UI
@@ -34,21 +37,21 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
-    cards.classList.add("grid");
-    cards.classList.remove("list");
+    container.classList.add("grid");
+    container.classList.remove("list");
 }
 );
 
 listbutton.addEventListener("click", showlist); 
 
 function showlist() {
-    cards.classList.add("list");
-    cards.classList.remove("grid");
+    container.classList.add("list");
+    container.classList.remove("grid");
 }
 
 
 const displayTreehouses = (treehouses) => {
-    const container = document.querySelector(".rentalsContainer");
+    
     treehouses.forEach(treehouse => {
         const card = document.createElement("div");
         card.className = "treehouse-card";
@@ -63,7 +66,7 @@ const displayTreehouses = (treehouses) => {
         
 
         let info = document.createElement("button");
-        info.classList.add = "treehouseInfo";
+        info.classList.add("treehouseInfo");
         info.textContent = "Learn more";
         card.appendChild(info);
 
