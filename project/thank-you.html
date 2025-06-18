@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://BerryPatchWhimsy.github.io/wdd231/project/contact-us.html">
 
     <script src="scripts/contact-us.js" type="module"></script>
-    <!-- <script src="scripts/get-random-reviews.mjs" type="module"></script> -->
+    <script src="scripts/thank-you.js" type="module"></script>
     <!-- <script src="scripts/weather.js" defer></script> -->
     <!-- <script src="scripts/spotlight.js" defer></script> -->
 
@@ -26,6 +26,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/contact-us.css">
+    
     <!-- <link rel="stylesheet" href="styles/index-med.css" media="(min-width: 320px)"> -->
     <!-- <link rel="stylesheet" href="styles/index-large.css" media="(min-width: 600px)"> -->
     <!-- <link rel="stylesheet" href="styles/index-xlarge.css" media="(min-width: 900px)"> -->
@@ -47,7 +48,7 @@
         </div>
     </header>
     <main>
-        <h1>Contact Us Page</h1>
+        <h1>Contact Us</h1>
         <nav id="animateMe">
             <ul class="navigation">
                 <li><a href="index.html" title="Home">Home</a></li>
@@ -56,60 +57,11 @@
                 <!-- <li><a href="#" title="Events">Events</a></li> -->
             </ul>
         </nav>
-        <div class="officeInfo">
-            <picture id="office">
-                <source srcset="images/leaf-hero-small.webp" media="(max-width: 600px)">
-                <img src="images/leaf-hero.webp" alt="Leafy Treetops Office" width="700">
-            </picture>
-            <div class="mapInfo">
-                <div class="officephone">
-                    <img src="images/phone.webp" alt="Phone" width="50px">
-                    <p>(775)-123-4567</p>
-                </div>
-                <div class="website">
-                    <img src="images/info.webp" alt="Globe" width="55px">
-                    <p><a href="https://BerryPatchWhimsy.github.io/wdd231/project/index.html"></a>https://leafytreetops.com</p>
-                </div>
-                <div class="officeaddress">
-                    <img src="images/location.webp" alt="Map Pin" width="65px">
-                    <p><a href="https://maps.app.goo.gl/zvyKaHuXrraQ2sBY8"
-                            title="addressMapLink">7385 Big Pine Road, Marshall, NC 28753</a></p>
-                </div>
-            </div>
+        <div class="messageContainer">
+            <h2>Thank You!</h2>
+            <p class="verification">Your form has been submitted.</p>
+            <p class="thankYou">We will reach out as soon as possible.</p>
         </div>
-        <div class="staff">
-        </div>
-        <form method="get" action="thank-you.html" id="form1" class="form">
-            <legend class="formTitle">Property inquiries</legend>
-            <fieldset class="contactInfo">
-                <legend>Contact Information</legend>
-        
-                <label class="formname">* Your Name<input type="text" name="customerName" id="customerName" required></label>
-        
-                <label class="formemail">* Email<input type="email" name="customerEmail" id="email" required></label>
-        
-                <label class="pAddress">* Property Address<textarea name="address" id="propertyAddress"
-                        placeholder="Enter address here..." required></textarea></label>
-        
-                <label class="formdate">Today's Date (optional)<input type="date" name="today'sDate" id="formDate"></label>
-            </fieldset>
-            <fieldset class="optionalInfo">
-                <legend>Optional</legend>
-        
-                <label class="phone">If you prefer us to contact you by phone:<input type="tel" name="customerTel" id="tel"
-                        placeholder="(111) 222 1234"></label>
-        
-                <div>Would you like to recieve email updates?</div>
-                <label><input type="radio" name="emailUpdates" id="emailYes" value="yes">Yes</label>
-                <label><input type="radio" name="emailUpdates" id="emailNo" value="no">No</label>
-        
-                <div>Are you interested in recieving our annual newsletter?</div>
-                <label><input type="radio" name="newsletter" id="newsYes">Yes</label>
-                <label><input type="radio" name="newsletter" id="newsNo">No</label>
-            </fieldset>
-            <input class="button" type="submit" value="Send My Request">
-        </form>
-
     </main>
     <footer>
         <div class="info">

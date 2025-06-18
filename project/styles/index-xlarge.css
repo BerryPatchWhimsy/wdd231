@@ -4,6 +4,11 @@
         font-size: 2rem;
     }
 
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
+
     .hero {
         width: 100%;
         height: auto;

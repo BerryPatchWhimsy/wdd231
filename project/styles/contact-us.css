@@ -110,11 +110,8 @@ footer {
 
 }
 
-.navigation a:hover,
-#reserve:hover,
-.treehouseInfo:hover {
+.navigation a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
     font-weight: bolder;
     border-radius: 3px;
     background-color: var(--accent-color);
@@ -135,8 +132,8 @@ footer {
 }
 
 .active::before {
-    content: "☀️Contact Us";
-    text-decoration: none;
+    content: "Contact Us☀️";
+    text-decoration: underline;
 
 }
 
@@ -185,6 +182,100 @@ footer {
 }
 
 /*--------- body ---------*/
+
+.officeInfo {
+
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+#office img {
+    width: 100%;
+    object-fit: fill;
+    box-shadow: 0 0 10px var(--secondary-color);
+    border-radius: 10px;
+
+}
+
+#map iframe {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+
+    border-radius: 10px;
+}
+
+#map p {
+    margin-left: 1rem;
+}
+
+#map figure {
+    margin-top: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+
+.officephone,
+.website,
+.officeaddress {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.website {
+    text-decoration: underline;
+}
+
+.website p:hover, .officeaddress p:hover {
+    color: blue;
+}
+
+.officeaddress a {
+    color: var(--accent2-color);
+}
+
+.officeaddress a:hover {
+    color: var(--accent1-color);
+}
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+
+}
+
+.staff div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1.25rem;
+    background-color: var(--secondary-color);
+    justify-items: center;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.staff div h2 {
+    color: white;
+}
+
+.staff img {
+    width: 200px;
+    justify-content: center;
+}
+
+.staff p {
+    color: white;
+}
 
 .form {
     margin: 1rem;
@@ -275,6 +366,30 @@ footer {
     font-weight: bold;
 }
 
+/*--------thank you page-------------*/
+.messageContainer {
+    border: 3px double var(--tertiary-color);
+    margin: 1rem;
+}
+
+.messageContainer h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.verification {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.thankYou {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
 
 
 /* --------------------------------media medium---------------------------------------------- */
@@ -320,9 +435,7 @@ footer {
         grid-template-rows: 1fr;
     }
 
-    .active::before {
-        content: "Rentals☀️";
-    }
+    
 
 
 
@@ -378,6 +491,55 @@ footer {
 
     }
 
+    #office {
+        max-width: 815px;
+    }
+
+    .officeInfo {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 2fr 1fr;
+        max-width: 1500px;
+        padding: 0.5rem;
+
+    }
+
+    .mapInfo div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .staff {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1400px;
+        justify-content: center;
+    }
+
+    /* section {
+        justify-self: center;
+        
+    } */
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr auto .25fr;
+    }
+
+    .form fieldset {
+        grid-row: 2 / 3;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .form input[type="submit"] {
+        grid-row: 3 / 4;
+    }
+
 
 
     footer {
@@ -396,7 +558,7 @@ footer {
     .copywrite,
     .info {
         text-align: center;
-        font-size: 2vw;
+        font-size: 3vw;
         font-weight: normal;
     }
 
@@ -430,8 +592,10 @@ footer {
         font-size: 2rem;
     }
 
-
-
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
 
 
 
