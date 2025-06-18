@@ -20,7 +20,6 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
-
 }
 
 h1,
@@ -112,7 +111,8 @@ footer {
 }
 
 .navigation a:hover,
-#reserve:hover {
+#reserve:hover,
+.treehouseInfo:hover {
     color: var(--primary-color);
     text-decoration: underline;
     font-weight: bolder;
@@ -135,7 +135,7 @@ footer {
 }
 
 .active::before {
-    content: "☀️Rentals";
+    content: "☀️Contact Us";
     text-decoration: none;
 
 }
@@ -185,6 +185,96 @@ footer {
 }
 
 /*--------- body ---------*/
+
+.form {
+    margin: 1rem;
+    border: 3px solid var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: var(--tertiary-color); */
+}
+
+.form fieldset {
+    margin: 1rem 0;
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.form legend {
+    padding: 0.5rem;
+    font-style: italic;
+    font-size: 25px;
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.form label {
+    display: block;
+    font-size: 18px;
+}
+
+.form div {
+    padding-top: 1rem;
+
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"],
+.form input[type="tel"],
+.form input[type="date"],
+.form textarea {
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    padding: 0.5rem;
+    color: var(--text-color);
+    max-width: 300px;
+    width: 100%;
+    appearance: none;
+    margin-top: .25rem;
+}
+
+.formdate,
+.formemail,
+.pAddress {
+    padding-top: 1rem;
+}
+
+/* .form:placeholder{
+    color: var(--secondary-color);
+} */
+
+.form input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+    margin-top: 10px;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 7px var(--primary-color);
+    font-size: 20px;
+
+}
+
+.form input[type="submit"]:hover {
+    background-color: white;
+    background-image: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    font-weight: bold;
+}
+
 
 
 /* --------------------------------media medium---------------------------------------------- */
@@ -295,7 +385,7 @@ footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr auto 1fr;
         padding: 1rem;
-        font-size: 1.5rem;
+
     }
 
     .leafyTreetopsLLC {
@@ -306,6 +396,8 @@ footer {
     .copywrite,
     .info {
         text-align: center;
+        font-size: 2vw;
+        font-weight: normal;
     }
 
 
@@ -326,6 +418,7 @@ footer {
         margin: .5rem;
     }
 
+    /*-------------- body css --------------*/
 
 
 
@@ -336,6 +429,8 @@ footer {
     h1 {
         font-size: 2rem;
     }
+
+
 
 
 
