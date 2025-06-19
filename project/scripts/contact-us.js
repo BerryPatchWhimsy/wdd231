@@ -17,9 +17,9 @@ button.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#form1");
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", () => {
         // Prevent actual submission to thank-you.html (only if testing)
-        // e.preventDefault(); 
+        //e.preventDefault(); 
 
         // Gather data
         const formData = {

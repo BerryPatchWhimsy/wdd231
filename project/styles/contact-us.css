@@ -498,7 +498,7 @@ footer {
     .officeInfo {
         display: grid;
         grid-gap: 1rem;
-        grid-template-columns: 2fr 1fr;
+        /* grid-template-columns: 2fr 1fr; */
         max-width: 1500px;
         padding: 0.5rem;
 
@@ -511,18 +511,8 @@ footer {
         margin-left: 0;
     }
 
-    .staff {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 1400px;
-        justify-content: center;
-    }
 
-    /* section {
-        justify-self: center;
-        
-    } */
+    
 
     .form {
         display: grid;
